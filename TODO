@@ -1,0 +1,17 @@
+
+* Fix HTML generation.
+* Remove all warnings
+* Update obsoleted constructs
+* Add more intelligent recognition of missing packages
+
+Fix:
+
+Gxsm-3.0-Manual.aux:\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+Gxsm-3.0-Manual.aux:\AtEndDocument{\ifx\hyper@anchor\@undefined
+Gxsm-3.0-Manual.log:LaTeX Warning: Citation 'Zahl03RSI74_1222' undefined on input line 72.
+Gxsm-3.0-Manual.log:LaTeX Warning: Citation 'Zahl10JVSTB28_C4E39' undefined on input line 73.
+Gxsm-3.0-Manual.log:LaTeX Warning: Citation 'Zahl15IM17_38' undefined on input line 74.
+Gxsm-3.0-Manual.log:LaTeX Font Warning: Font shape `U/futs/m/n' undefined
+Gxsm-3.0-Manual.log:LaTeX Warning: There were undefined references.
+Gxsm-3.0-Manual.log:LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+

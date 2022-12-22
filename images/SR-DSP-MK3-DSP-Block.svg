@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="33cm" height="31cm" viewBox="0 3 33 31">
+  <rect style="fill: #cfb4ff" x="13.75" y="20.25" width="18.25" height="13.5"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.2; stroke: #000000" x="13.75" y="20.25" width="18.25" height="13.5"/>
+  <rect style="fill: #ffffff" x="21" y="32" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="21" y="32" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.805 cm; font-family: arial; font-style: normal; font-weight: normal" x="22.7225" y="33.0925">Slider Waveform</text>
+  <rect style="fill: #ffffff" x="20.75" y="30.25" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20.75" y="30.25" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.3075 cm; font-family: arial; font-style: normal; font-weight: normal" x="22.7213" y="31.3425">Auto Approach</text>
+  <rect style="fill: #ffffff" x="20.5" y="28.5" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20.5" y="28.5" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.9375 cm; font-family: arial; font-style: normal; font-weight: normal" x="21.6562" y="29.5925">Vector Probe, LockIn</text>
+  <rect style="fill: #ffffff" x="20.25" y="26.75" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20.25" y="26.75" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9425 cm; font-family: arial; font-style: normal; font-weight: normal" x="22.9037" y="27.8425">Area Scan</text>
+  <rect style="fill: #ffffff" x="20" y="25" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20" y="25" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.5625 cm; font-family: arial; font-style: normal; font-weight: normal" x="21.3438" y="26.0925">CoolRunner Puls/IO</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="16" y1="20.25" x2="16" y2="34.0132"/>
+  <polygon style="fill: #000000" points="16,34.3882 15.75,33.8882 16,34.0132 16.25,33.8882 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="16,34.3882 15.75,33.8882 16,34.0132 16.25,33.8882 "/>
+  <rect style="fill: #fdffc1" x="1" y="10" width="28.75" height="9.75"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.2; stroke: #000000" x="1" y="10" width="28.75" height="9.75"/>
+  <rect style="fill: #f7ffa5" x="1.5" y="12.75" width="19.5" height="6.5"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.2; stroke: #000000" x="1.5" y="12.75" width="19.5" height="6.5"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 12.84 cm; font-family: arial; font-style: oblique; font-weight: normal" x="2" y="11.25">Idle Loop: DSP as a state maschine</text>
+  <rect style="fill: #ffffff" x="4.71875" y="17" width="2.6625" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="4.71875" y="17" width="2.6625" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5625 cm; font-family: arial; font-style: normal; font-weight: normal" x="5.26875" y="18.0925">Move</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.3; stroke: #000099" x1="24.5" y1="20.25" x2="24.5" y2="11.5"/>
+  <rect style="fill: #ffffff" x="1.84125" y="17" width="2.5175" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.84125" y="17" width="2.5175" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.4175 cm; font-family: arial; font-style: normal; font-weight: normal" x="2.39125" y="18.0925">Scan</text>
+  <rect style="fill: #ffffff" x="10.75" y="17" width="2.7625" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="10.75" y="17" width="2.7625" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.6625 cm; font-family: arial; font-style: normal; font-weight: normal" x="11.3" y="18.0925">Slider</text>
+  <rect style="fill: #ffffff" x="13.86" y="17" width="3.18" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="13.86" y="17" width="3.18" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.08 cm; font-family: arial; font-style: normal; font-weight: normal" x="14.41" y="18.0925">A. App.</text>
+  <rect style="fill: #ffffff" x="7.7225" y="17" width="2.755" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="7.7225" y="17" width="2.755" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.655 cm; font-family: arial; font-style: normal; font-weight: normal" x="8.2725" y="18.0925">Probe</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.25" y1="16.25" x2="3.1" y2="17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="7.625" y1="16.25" x2="6.05" y2="17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11" y1="16.25" x2="9.1" y2="17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11" y1="16.25" x2="12.1312" y2="17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.375" y1="16.25" x2="15.45" y2="17"/>
+  <rect style="fill: #cfb4ff" x="1" y="20.25" width="12.1" height="13.5"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.2; stroke: #000000" x="1" y="20.25" width="12.1" height="13.5"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 7.8125 cm; font-family: arial; font-style: oblique; font-weight: normal" x="2" y="21.25">DSP data process ISR</text>
+  <text style="fill: #000000; font-size: 1 cm; length: 7.005 cm; font-family: arial; font-style: oblique; font-weight: normal" x="19.25" y="21.25">Data Process Tasks</text>
+  <rect style="fill: #ffffff" x="19.75" y="23.25" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="19.75" y="23.25" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.5025 cm; font-family: arial; font-style: normal; font-weight: normal" x="22.1238" y="24.3425">Offset Move</text>
+  <rect style="fill: #ffffff" x="19.5" y="21.5" width="8.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="19.5" y="21.5" width="8.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.055 cm; font-family: arial; font-style: normal; font-weight: normal" x="21.0975" y="22.5925">Feedback Lin/Log</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.3; stroke: #000099" x1="24.5" y1="11.5" x2="27.5" y2="11.5"/>
+  <rect style="fill: #ffffff" x="7.4811" y="22.1" width="3.423" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="7.4811" y="22.1" width="3.423" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.97 cm; font-family: arial; font-style: normal; font-weight: normal" x="8.2076" y="23.1925">ADC in</text>
+  <rect style="fill: #ffffff" x="5.5" y="26" width="7.25" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5.5" y="26" width="7.25" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.5275 cm; font-family: arial; font-style: normal; font-weight: normal" x="6.36125" y="27.0925">Data Process Tasks</text>
+  <rect style="fill: #ffffff" x="7.2426" y="29.75" width="3.9" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="7.2426" y="29.75" width="3.9" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.3725 cm; font-family: arial; font-style: normal; font-weight: normal" x="8.00635" y="30.8425">DAC out</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.4; stroke: #000000" x1="31.25" y1="11.25" x2="31.25" y2="5.5"/>
+  <rect style="fill: #ffffff" x="1" y="3.75" width="32.0412" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1" y="3.75" width="32.0412" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 10.2875 cm; font-family: arial; font-style: normal; font-weight: normal" x="11.8769" y="4.8425">GXSM :: Hardware Interface Plug-In</text>
+  <rect style="fill: #ffffff" x="1.50485" y="22.1" width="4.955" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.50485" y="22.1" width="4.955" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.855 cm; font-family: arial; font-style: normal; font-weight: normal" x="2.05485" y="23.1925">75 kHz Timer</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="31.25" y="6.5">  USB</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="9.1926" y1="24" x2="9.14144" y2="25.5135"/>
+  <polygon style="fill: #000000" points="9.12878,25.8883 8.89581,25.3801 9.14144,25.5135 9.39552,25.397 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.12878,25.8883 8.89581,25.3801 9.14144,25.5135 9.39552,25.397 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="9.125" y1="27.9" x2="9.17482" y2="29.2635"/>
+  <polygon style="fill: #000000" points="9.18852,29.6383 8.92043,29.1477 9.17482,29.2635 9.42009,29.1295 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.18852,29.6383 8.92043,29.1477 9.17482,29.2635 9.42009,29.1295 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.45985" y1="23.05" x2="6.9943" y2="23.05"/>
+  <polygon style="fill: #000000" points="7.3693,23.05 6.8693,23.3 6.9943,23.05 6.8693,22.8 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="7.3693,23.05 6.8693,23.3 6.9943,23.05 6.8693,22.8 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="2.25" y1="14.75" x2="3.7632" y2="14.75"/>
+  <polygon style="fill: #000000" points="4.1382,14.75 3.6382,15 3.7632,14.75 3.6382,14.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="4.1382,14.75 3.6382,15 3.7632,14.75 3.6382,14.5 "/>
+  <rect style="fill: #ccff99" x="1" y="6" width="28.75" height="4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.2; stroke: #000000" x="1" y="6" width="28.75" height="4"/>
+  <text style="fill: #000000; font-size: 1 cm; length: 4.32 cm; font-family: arial; font-style: oblique; font-weight: normal" x="2" y="7">DSP startup</text>
+  <rect style="fill: #ffffff" x="17.25" y="17" width="3.45" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="17.25" y="17" width="3.45" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.34 cm; font-family: arial; font-style: normal; font-weight: normal" x="17.805" y="18.0925">CR. Puls</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.975" y1="17" x2="17.75" y2="16.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8047" y1="22.4888" x2="19.0133" y2="22.4612"/>
+  <polygon style="fill: #000000" points="17.4298,22.4974 17.9239,22.236 17.8047,22.4888 17.9354,22.7359 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,22.4974 17.9239,22.236 17.8047,22.4888 17.9354,22.7359 "/>
+  <polygon style="fill: #000000" points="19.3882,22.4526 18.8941,22.714 19.0133,22.4612 18.8826,22.2141 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.3882,22.4526 18.8941,22.714 19.0133,22.4612 18.8826,22.2141 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8047" y1="24.24" x2="19.2633" y2="24.21"/>
+  <polygon style="fill: #000000" points="17.4298,24.2477 17.9245,23.9875 17.8047,24.24 17.9348,24.4874 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,24.2477 17.9245,23.9875 17.8047,24.24 17.9348,24.4874 "/>
+  <polygon style="fill: #000000" points="19.6382,24.2023 19.1435,24.4625 19.2633,24.21 19.1332,23.9626 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.6382,24.2023 19.1435,24.4625 19.2633,24.21 19.1332,23.9626 "/>
+  <polygon style="fill: #ffffff" points="14.864,22 17.5,22 17.136,23 14.5,23 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,22 17.5,22 17.136,23 14.5,23 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.2075 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.3963" y="22.625">FB ?</text>
+  <polygon style="fill: #ffffff" points="14.864,29 17.5,29 17.136,30 14.5,30 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,29 17.5,29 17.136,30 14.5,30 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.2425 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.3788" y="29.625">VP ?</text>
+  <polygon style="fill: #ffffff" points="14.864,27.25 17.5,27.25 17.136,28.25 14.5,28.25 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,27.25 17.5,27.25 17.136,28.25 14.5,28.25 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.85 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.075" y="27.875">Scan ?</text>
+  <polygon style="fill: #ffffff" points="14.864,25.5 17.5,25.5 17.136,26.5 14.5,26.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,25.5 17.5,25.5 17.136,26.5 14.5,26.5 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.6875 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.1562" y="26.125">Puls ?</text>
+  <polygon style="fill: #ffffff" points="14.864,23.75 17.5,23.75 17.136,24.75 14.5,24.75 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,23.75 17.5,23.75 17.136,24.75 14.5,24.75 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.815 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.0925" y="24.375">Mov. ?</text>
+  <polygon style="fill: #ffffff" points="14.864,30.75 17.5,30.75 17.136,31.75 14.5,31.75 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,30.75 17.5,30.75 17.136,31.75 14.5,31.75 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.7925 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.1037" y="31.375">App. ?</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 3.58 cm; font-family: arial; font-style: oblique; font-weight: normal" x="27.96" y="21">all sub tasks are</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 2.8175 cm; font-family: arial; font-style: oblique; font-weight: normal" x="28.3412" y="21.6">non-blocking</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 2.0675 cm; font-family: arial; font-style: oblique; font-weight: normal" x="28.7162" y="22.2">and inde-</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 1.9625 cm; font-family: arial; font-style: oblique; font-weight: normal" x="28.7688" y="22.8">pendent.</text>
+  <rect style="fill: #ffffff" x="1.40875" y="7.5" width="8.6825" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.40875" y="7.5" width="8.6825" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.5825 cm; font-family: arial; font-style: normal; font-weight: normal" x="1.95875" y="8.5925">Magic </text>
+  <rect style="fill: #ffffff" x="11.5975" y="7.5" width="6.005" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="11.5975" y="7.5" width="6.005" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.905 cm; font-family: arial; font-style: normal; font-weight: normal" x="12.1475" y="8.5925">AIC </text>
+  <rect style="fill: #ffffff" x="18.8388" y="7.5" width="10.5725" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="18.8388" y="7.5" width="10.5725" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.4725 cm; font-family: arial; font-style: normal; font-weight: normal" x="19.3888" y="8.5925">Idle Loop / statemachine startup</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.0912" y1="8.45" x2="11.1107" y2="8.45"/>
+  <polygon style="fill: #000000" points="11.4857,8.45 10.9857,8.7 11.1107,8.45 10.9857,8.2 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.4857,8.45 10.9857,8.7 11.1107,8.45 10.9857,8.2 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.45" y1="8.45" x2="18.3521" y2="8.45"/>
+  <polygon style="fill: #000000" points="18.7271,8.45 18.2271,8.7 18.3521,8.45 18.2271,8.2 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="18.7271,8.45 18.2271,8.7 18.3521,8.45 18.2271,8.2 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8048" y1="25.9964" x2="19.4632" y2="25.9843"/>
+  <polygon style="fill: #000000" points="17.4298,25.9992 17.928,25.7455 17.8048,25.9964 17.9316,26.2455 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,25.9992 17.928,25.7455 17.8048,25.9964 17.9316,26.2455 "/>
+  <polygon style="fill: #000000" points="19.8382,25.9815 19.34,26.2352 19.4632,25.9843 19.3364,25.7352 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.8382,25.9815 19.34,26.2352 19.4632,25.9843 19.3364,25.7352 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8047" y1="27.7417" x2="19.7633" y2="27.7083"/>
+  <polygon style="fill: #000000" points="17.4298,27.7481 17.9255,27.4896 17.8047,27.7417 17.934,27.9895 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,27.7481 17.9255,27.4896 17.8047,27.7417 17.934,27.9895 "/>
+  <polygon style="fill: #000000" points="20.1382,27.7019 19.6425,27.9604 19.7633,27.7083 19.634,27.4605 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="20.1382,27.7019 19.6425,27.9604 19.7633,27.7083 19.634,27.4605 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8047" y1="29.4924" x2="20.0133" y2="29.4576"/>
+  <polygon style="fill: #000000" points="17.4298,29.4982 17.9258,29.2404 17.8047,29.4924 17.9337,29.7404 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,29.4982 17.9258,29.2404 17.8047,29.4924 17.9337,29.7404 "/>
+  <polygon style="fill: #000000" points="20.3882,29.4518 19.8922,29.7096 20.0133,29.4576 19.8843,29.2096 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="20.3882,29.4518 19.8922,29.7096 20.0133,29.4576 19.8843,29.2096 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8048" y1="31.2429" x2="20.2632" y2="31.2071"/>
+  <polygon style="fill: #000000" points="17.4298,31.2484 17.9261,30.9911 17.8048,31.2429 17.9334,31.4911 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,31.2484 17.9261,30.9911 17.8048,31.2429 17.9334,31.4911 "/>
+  <polygon style="fill: #000000" points="20.6382,31.2016 20.1419,31.4589 20.2632,31.2071 20.1346,30.9589 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="20.6382,31.2016 20.1419,31.4589 20.2632,31.2071 20.1346,30.9589 "/>
+  <polygon style="fill: #ffffff" points="14.864,32.5 17.5,32.5 17.136,33.5 14.5,33.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.864,32.5 17.5,32.5 17.136,33.5 14.5,33.5 "/>
+  <text style="fill: #000000; font-size: 0.7 cm; length: 1.75 cm; font-family: sans; font-style: normal; font-weight: 700" x="15.125" y="33.125">Slid. ?</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.8048" y1="32.9934" x2="20.5132" y2="32.9566"/>
+  <polygon style="fill: #000000" points="17.4298,32.9985 17.9264,32.7417 17.8048,32.9934 17.9331,33.2417 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4298,32.9985 17.9264,32.7417 17.8048,32.9934 17.9331,33.2417 "/>
+  <polygon style="fill: #000000" points="20.8882,32.9515 20.3916,33.2083 20.5132,32.9566 20.3849,32.7083 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="20.8882,32.9515 20.3916,33.2083 20.5132,32.9566 20.3849,32.7083 "/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke-dasharray: 0.2; stroke: #ff0000" x1="12.75" y1="26" x2="13.75" y2="20.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke-dasharray: 0.2; stroke: #ff0000" x1="13.75" y1="33.75" x2="12.75" y2="27.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="24.125" y1="9.4" x2="19.9144" y2="11.9946"/>
+  <polygon style="fill: #000000" points="19.5952,12.1913 19.8897,11.7162 19.9144,11.9946 20.152,12.1419 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.5952,12.1913 19.8897,11.7162 19.9144,11.9946 20.152,12.1419 "/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="2.25" y="12.25" width="17.25" height="2.5" rx="1.17549e-38" ry="1.17549e-38"/>
+  <rect style="fill: #ffffff" x="4.25" y="13.25" width="13.5" height="3"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="4.25" y="13.25" width="13.5" height="3"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.9625 cm; font-family: arial; font-style: normal; font-weight: normal" x="6.01875" y="14.4925">Change in state variable occured?</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.4775 cm; font-family: arial; font-style: normal; font-weight: normal" x="7.26125" y="15.2925">then enable/disable tasks</text>
+  <polygon style="fill: #ffffff" points="20.7701,13 28.7012,13 27.4273,16.5 19.4962,16.5 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="20.7701,13 28.7012,13 27.4273,16.5 19.4962,16.5 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.35 cm; font-family: arial; font-style: normal; font-weight: normal" x="21.4237" y="14.0925">DSP-DPORT-SRAM:</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.18 cm; font-family: arial; font-style: normal; font-weight: normal" x="21.5087" y="14.8925">all state variables</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.9575 cm; font-family: arial; font-style: normal; font-weight: normal" x="21.12" y="15.6925">and data/fifo buffers</text>
+  <rect style="fill: #ffffff" x="23.4822" y="10.5" width="8.985" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="23.4822" y="10.5" width="8.985" height="1.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.885 cm; font-family: arial; font-style: normal; font-weight: normal" x="24.0322" y="11.5925">Cypress USB-2.0 Controller</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 5.155 cm; font-family: arial; font-style: oblique; font-weight: normal" x="1.4225" y="30.5">Analog-810 subsystem:</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 2.0325 cm; font-family: arial; font-style: oblique; font-weight: normal" x="2.98375" y="31.1">driver for</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 2.1725 cm; font-family: arial; font-style: oblique; font-weight: normal" x="2.91375" y="31.7">ADC/DAC,</text>
+  <text style="fill: #000000; font-size: 0.6 cm; length: 4.62 cm; font-family: arial; font-style: oblique; font-weight: normal" x="1.69" y="32.3"> offset compensation</text>
+</svg>

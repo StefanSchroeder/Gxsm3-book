@@ -1,0 +1,51 @@
+%/* Gxsm-3.0 - Gnome X Scanning Microscopy
+% * universal STM/AFM/SARLS/SPALEED/... controlling and
+% * data analysis software: Documentation
+% * 
+% * This software is based on the earlier documentation of XSM, GXSM and GXSM2
+% * 
+% * Copyright (C) 2017 Percy Zahl, Thorsten Wagner
+% *
+% * Authors: Percy Zahl <zahl@users.sf.net>, Andreas Klust <klust@users.sf.net>, Thorsten Wagner <stm@users.sf.net>
+% * WWW Home: http://gxsm.sf.net
+% *
+% * This program is free software: you can redistribute it and/or modify
+% * it under the terms of the GNU General Public License as published by
+% * the Free Software Foundation, either version 3 of the License, or
+% * (at your option) any later version.
+% *    
+% * This program is distributed in the hope that it will be useful,
+% * but WITHOUT ANY WARRANTY; without even the implied warranty of
+% * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% * GNU General Public License for more details.
+% *   
+% * You should have received a copy of the GNU General Public License
+% * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% */
+
+\chapter{\Gxsm\ Quick Start Guide}
+\label{cha:Gxsm-quick}
+\index{Quickstart}
+In this chapter, we will briefly described to configure \Gxsm\ after installation to operate one of SoftdB's Open Source SPM controller, i.e. MK2-A810 or MK3Pro-PLL. Please, make sure that you have installed a recent version of \Gxsm\ and the proper kernel modules before continuing. For further instructions to install \Gxsm\ see Chap.~\ref{cha:Gxsm-install}. There is also a Chap. explaining how to upload the DSP binary to your Open Source SPM controller.
+
+\GxsmHint{In case, you want to start over with `fresh' settings, please follow the instructions below in Sec.~\ref{sec:Gxsm-quick-ResetingSettings}}
+
+\section{Storing and Restoring Settings}
+\label{sec:Gxsm-quick-StoringSettings}
+\index{Settings!Store}
+\index{Settings!Restore}
+To save and archive/backup simply do this to save it in a file named for example gxsm3-dconf-dump:\\ \\
+\GxsmCmd{dconf dump /org/gnome/gxsm3/ $>$ gxsm3-dconf-dump}\\ \\
+and to restore simply read it back -- sure this will overwrite any current settings:\\\\
+\GxsmCmd{dconf load /org/gnome/gxsm3/ $>$ gxsm3-dconf-dump}\\
+\GxsmNote{It is strongly adviced to exit \Gxsm\ while storing/restoring settings.}
+
+To manually inspect it you may use (sure with caution) the dconf-editor as well.
+
+\section{Delete Settings}
+\label{sec:Gxsm-quick-ResetingSettings}
+\index{Settings!Reset}
+
+If required you can delete all settings stored by \Gxsm\ in the dconf by\\ \\
+\GxsmCmd{dconf reset -f /org/gnome/gxsm3/}
+\GxsmNote{The / at the command is important to manipulate the whole tree and not just a single entry.}

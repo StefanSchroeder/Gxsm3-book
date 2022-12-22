@@ -1,10 +1,13 @@
 #
-# This README is part of Gxsm, the 
-# open source SPM solution.
+# This is the README.md for the MANUAL
+# of GXSM3, the open source SPM solution.
 # 
 
-Quick-Install
-=============
+The project is located here:
+
+	https://github.com/pyzahl/Gxsm3
+
+# Quick-Install
 
 	# Download all the necessary packages
 	make prepare
@@ -14,9 +17,7 @@ Quick-Install
 	make view 
 
 
-This is the main directory of the Gxsm-Manual
-=============================================
-
+# This is the main directory of the Gxsm-Manual
 
 It contains _most_ of the files to generate the
 PDF-manual for Gxsm (but not the plug-in documentation

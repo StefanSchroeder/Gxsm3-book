@@ -22,7 +22,7 @@ ALLTEXSRCS = $(ALLTEXFILES)
 
 #------------------------------------------------------------------------
 
-all: pdfmanual
+all: pdfmanual view
 
 prepare:
 	bash helpers/bootstrap_buildenvironment.sh
@@ -31,12 +31,14 @@ pdfmanual:
 	bash helpers/make-gxsm-manual.sh
 
 install: 
-	if !(test -f "Gxsm-3.0-Manual.pdf"); then ./helpers/make-gxsm-manual.sh; fi;
-	install -o root -g root Gxsm-3.0-Manual.pdf $(INSTALLDIR)
+	install -o root -g root src/Gxsm-3.0-Manual.pdf $(INSTALLDIR)
 
 clean:
-	rm -rf *.dvi *.log *.aux *.idx *.ilg *.ind *.bbl *.bcf *.blg *.out *.toc *.bak latex/*.aux
+	pushd src && rm -rf *.dvi *.log *.aux *.idx *.ilg *.ind *.bbl *.bcf *.blg *.out *.toc *.bak latex/*.aux && popd
 
 html:
 	latex2html -local_icons -antialias -antialias_text -mkdir -dir html -split +1 -prefix gxsm- Gxsm-3.0-Manual
+
+view:
+	xdg-open src/Gxsm-3.0-Manual.pdf
 

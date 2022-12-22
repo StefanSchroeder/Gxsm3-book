@@ -53,7 +53,6 @@ fi
 
 pushd src/
 latexmk -pdf Gxsm-3.0-Manual.tex
-makeindex -s gindx.ist Gxsm-3.0-Manual.idx
 popd
 
 cat docuscan.log

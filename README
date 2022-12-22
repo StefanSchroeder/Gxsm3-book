@@ -1,13 +1,17 @@
+#
+# This README is part of Gxsm, the 
+# open source SPM solution.
+# 
 
 Quick-Install
 =============
 
 	# Download all the necessary packages
-	sudo ./bootstrap_buildenvironment.sh
+	make prepare
 	# Build the manual
-	make && make
+	make
 	# Open the manual
-	xdg-open ./Gxsm-3.0-Manual.pdf
+	make view 
 
 
 This is the main directory of the Gxsm-Manual

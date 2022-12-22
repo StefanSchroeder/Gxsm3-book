@@ -22,7 +22,7 @@ ALLTEXSRCS = $(ALLTEXFILES)
 
 #------------------------------------------------------------------------
 
-all: pdfmanual view
+all: pdfmanual 
 
 prepare:
 	bash helpers/bootstrap_buildenvironment.sh

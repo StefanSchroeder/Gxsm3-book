@@ -152,8 +152,8 @@ For more details on the different modes of the visualization of the data see Cha
  Plug-ins:
  \begin{itemize}
  \item Background correction methods
- \item Image filtering 1D and 2D, including several Fourier
- transformation methods
+ \item Image filtering 1D and 2D, including several methods for Fourier
+ transformation 
  \item Image analysis/statistics: histogram, step analysis, ...
  \item Geometric transformations: scaling, rotation, affine, ...
  \item and more, write and contribute your favorite math Plug-in
@@ -165,7 +165,8 @@ For more details on the different modes of the visualization of the data see Cha
  \item Special datafile/formats import/export filters, (extendable via PlugIns):
  \begin{itemize}
  \item a set of simple raw formats (.byt,.sht,.flt,...), see \ref{pi:primitiveimexport}
- \item Digital Instruments/Veeco Metrology Group, NanoScope (import) (\GxsmWWW{veeco.com}, see \ref{pi:nanoimport})
+ \item Digital Instruments/Veeco Metrology Group, NanoScope (import)
+(go to \GxsmWWW{veeco.com} to learn more, see \ref{pi:nanoimport})
  \item Omicron NanoTechnology, Scala (\GxsmWWW{www.omicron.de}, see \ref{pi:OmicronIO})
  \item WSxM/Nanotec Electronica SPM, WSxM (\GxsmWWW{www.nanotec.es}, see \ref{pi:WSxMio})
  \item SDF (Surface Data Format, see \ref{pi:sdfimport})
@@ -186,7 +187,7 @@ For more details on the different modes of the visualization of the data see Cha
  (Speed, ...)
  \item SPM: Mover/slider and auto approach controls
  \item SPM: flexible Probing: Spectroscopy (STS), Force-Distance
- Curves (AFM), using the DSP also Digital LockIn Probing (e.g.
+ Curves in AFM, using the DSP also Digital LockIn Probing (e.g.
  dI/dU (U)) is possible without any additional hardware! But
  not only SPM, I already ran our Quadrupole Mass Analyzer with
  it!
@@ -203,11 +204,11 @@ For more details on the different modes of the visualization of the data see Cha
  Speed, ...) for ''Pen-Up'' and ''Pen-Down'' movements. This was in
  principle already possible via the remote control and a script, but
  now it's much more convenient and user friendly! Even the path is
- shown ... can be modified, saved and re plotted!
+ shown ... can be modified, saved and re-plotted!
 
- \item A Plug-in categorizing mechanism automatically only loads the
- required Plug-Ins for the actual setup: E.g. no Hardware Control
- Plug-ins are loaded in ''offline'' Data Analysis Mode.
+ \item A Plug-in categorization mechanism automatically only loads the
+ Plug-ins for the actual setup: E.g. no Hardware Control
+ Plug-ins are loaded in ``offline'' Data Analysis Mode.
 
  \item At the time there are more than 80 Plug-ins.
  \end{itemize}
@@ -236,8 +237,8 @@ For more details on the different modes of the visualization of the data see Cha
  attached to the scan with all data and can be visualized via a
  single mouse click. The same for automatic rastered ``Probe'' scanning.
 
-\item Python Remote Control Interface: The \Gxsm\ scanning progress is fully
- scriptable using python. Or may be used to automatize math/data
+\item Python Remote Control Interface: The \Gxsm\ scanning progress is 
+ scriptable using Python. Or may be used to automatize math/data
  analysis tasks.
  
 \item Cross Platform: works on i386 and PPC based Linux distributions; a Windows port besides the main stream is available\footnote{\GxsmWWWx{gxsm4w.sf.net}{http://gxsm4w.sf.net}}.

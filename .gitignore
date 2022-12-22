@@ -1,0 +1,16 @@
+*.aux
+docuscan.log
+*.bbl
+*.bcf
+*.idx
+plug-ins
+*.blg
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
+*.log
+*.out
+*.run.xml
+*.toc
+

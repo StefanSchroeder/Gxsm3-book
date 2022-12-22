@@ -19,3 +19,9 @@ jobs:
 
     - name: Build PDF
       run: make 
+
+    - name: Store result PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: pdf-result
+        path: src/*.pdf

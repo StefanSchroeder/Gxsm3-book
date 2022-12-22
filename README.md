@@ -1,7 +1,7 @@
-#
-# This is the README.md for the MANUAL
-# of GXSM3, the open source SPM solution.
-# 
+
+This is the README.md for the MANUAL
+of GXSM3, the open source SPM solution.
+ 
 
 The project is located here:
 
@@ -9,7 +9,7 @@ The project is located here:
 
 # Quick-Install
 
-	# Download all the necessary packages
+	# Download all the necessary packages (on debian-type systems)
 	make prepare
 	# Build the manual
 	make
@@ -17,17 +17,19 @@ The project is located here:
 	make view 
 
 
-# This is the main directory of the Gxsm-Manual
+## Gxsm-Manual
 
 It contains _most_ of the files to generate the
 PDF-manual for Gxsm (but not the plug-in documentation
 which is embedded in the plug-ins).
 
-Run 'make' to generate Gxsm-3.0-Manual.pdf
-Run it again, because the index is compiled in two passes.
-
-Run 'make clean' to remove the log files and auxilaury files
-from the current directory.
+Run 
+	
+	make prepare # to install build-dependencies
+	make # to generate Gxsm-3.0-Manual.pdf
+	make clean # to remove build-artifacts
+	make view # to view the PDF
+	make install # install the PDF to /usr/local
 
 FIXME: HTML generation doesnt work 05/2015.
 Run 'make html' to create a HTML version in 'html'.

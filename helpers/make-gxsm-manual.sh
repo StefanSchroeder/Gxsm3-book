@@ -32,18 +32,7 @@ else
             ln -v -s "$look_for_plugins" .
         else
             # All attempts to find the plug-ins folder failed.
-            # Ask user.
-            echo "Could not find your Gxsm-3.0 sources in the default location."
-            echo "Please provide the full path to the plug-ins directory."
-            echo "[e.g. ~/gxsm3-svn/plug-ins]"
-            read pluginpath
-            if [ -d $pluginpath ] ; then 
-                echo "The path you entered looks ok."
-                ln -s "$pluginpath" .
-            else
-                echo "WARN: The path you entered is not ok."
-                echo "Unable to find plug-ins. They will not be included in the manual."
-            fi
+            echo "Unable to find plug-ins. They will not be included in the manual."
         fi
     fi
 fi

@@ -17,7 +17,7 @@ fi
 
 . /etc/os-release
 
-distrospecific="bootstrap.d/recipe_${ID}_${VERSION_ID}.sh"
+distrospecific="helpers/bootstrap.d/recipe_${ID}_${VERSION_ID}.sh"
 
 if [[ -f $distrospecific ]] ; then
 	. $distrospecific

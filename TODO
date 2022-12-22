@@ -3,6 +3,9 @@
 * Remove all warnings
 * Update obsoleted constructs
 * Add more intelligent recognition of missing packages
+* Fix overfull lines
+* Dynamically figure out location of plugins.
+* create GH-pages compatible HTML rendering.
 
 Fix:
 

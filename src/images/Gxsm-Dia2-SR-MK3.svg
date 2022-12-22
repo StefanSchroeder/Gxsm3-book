@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="31cm" viewBox="59 -9 604 612" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #c0ffdb" x="60" y="216" width="540" height="160"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 4; stroke: #000000" x="60" y="216" width="540" height="160"/>
+  </g>
+  <g>
+    <rect style="fill: #d6ccff" x="60" y="372" width="540" height="196"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 4; stroke: #000000" x="60" y="372" width="540" height="196"/>
+  </g>
+  <g>
+    <rect style="fill: #fdffc1" x="60" y="20" width="540" height="196"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 4; stroke: #000000" x="60" y="20" width="540" height="196"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 619.816 240.035 C 614,331.25 650,430.25 425.798,407.452"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="626.924,254.281 619.958,237.804 610.956,253.262 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="440.301,400.886 423.574,407.226 438.682,416.804 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="128" y="308" width="129.888" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="128" y="308" width="129.888" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="192.944" y="330.6">
+      <tspan x="192.944" y="330.6">8 x ADC +/- 10 V</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="330" cy="20" rx="54" ry="28"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="330" cy="20" rx="54" ry="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="330" y="24.5">
+      <tspan x="330" y="24.5">User</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="330" cy="124" rx="62" ry="28"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="330" cy="124" rx="62" ry="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="330" y="128.5">
+      <tspan x="330" y="128.5">GXSM</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="348.414" cy="566.474" rx="69.3256" ry="34.9342"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="348.414" cy="566.474" rx="69.3256" ry="34.9342"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="348.414" y="570.974">
+      <tspan x="348.414" y="570.974">SPM Head</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="409.652" y="307.072" width="145.677" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="409.652" y="307.072" width="145.677" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="482.49" y="329.672">
+      <tspan x="482.49" y="329.672">via Spartan FPGA</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="180.797" cy="520.174" rx="32.7971" ry="20.1743"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="180.797" cy="520.174" rx="32.7971" ry="20.1743"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:700" x="180.797" y="523.324">
+      <tspan x="180.797" y="523.324">IVC</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="552" y="172">
+    <tspan x="552" y="172">Storage</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="458.09" y="60">
+    <tspan x="458.09" y="60">X11</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="458.09" y="88">
+    <tspan x="458.09" y="88">Gnome/Gtk+</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="388" y1="68" x2="540" y2="68"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="330" y1="62.2361" x2="330" y2="81.7639"/>
+    <polygon style="fill: #000000" points="330,50.2361 338,66.2361 330,62.2361 322,66.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="330,50.2361 338,66.2361 330,62.2361 322,66.2361 "/>
+    <polygon style="fill: #000000" points="330,93.7639 322,77.7639 330,81.7639 338,77.7639 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="330,93.7639 322,77.7639 330,81.7639 338,77.7639 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="195.102" y1="124.631" x2="253.764" y2="124.123"/>
+    <polygon style="fill: #000000" points="183.102,124.735 199.032,116.597 195.102,124.631 199.171,132.597 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="183.102,124.735 199.032,116.597 195.102,124.631 199.171,132.597 "/>
+    <polygon style="fill: #000000" points="265.764,124.019 249.834,132.158 253.764,124.123 249.695,116.158 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="265.764,124.019 249.834,132.158 253.764,124.123 249.695,116.158 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="396.472" y1="124" x2="503.528" y2="124"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="410.236,116 394.236,124 410.236,132 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.764,132 505.764,124 489.764,116 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" d="M 201.743,96.4836 A 110.95,110.95 0 0 0 296.642,52.6838"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" points="211.673,89.6822 198.867,96.3166 198.867,96.3166 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" points="298.266,64.8089 298.381,50.3871 298.381,50.3871 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="458.09" y="184">
+    <tspan x="458.09" y="184">Unix Device</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="458.09" y="212">
+    <tspan x="458.09" y="212">Linux Kernel Module</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="388" y1="192" x2="540" y2="192"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="458.09" y="144.258">
+    <tspan x="458.09" y="144.258">Net CDF</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="329.563,195.349 361.063,215.861 329.563,236.372 298.062,215.861 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="329.563,195.349 361.063,215.861 329.563,236.372 298.062,215.861 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="329.563" y="218.561">
+      <tspan x="329.563" y="218.561">USB</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="329.563" y1="195.349" x2="329.563" y2="195.349"/>
+  <text font-size="9.6" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="232" y="112">
+    <tspan x="232" y="112">PlugIn Interface</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-dasharray: 4; stroke: #000000" d="M 387.284,113.285 A 409.295,409.295 0 0 0 563.996,60.0022"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="554.092,74.8966 563.998,60.0011 546.138,61.0138 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="402.725,104.256 387.282,113.285 403.771,120.222 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="388" y1="264" x2="540" y2="264"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="458.09" y="256">
+    <tspan x="458.09" y="256">SPM DSP software</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="225.416" y1="308" x2="280.742" y2="280.694"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="446.072" y1="307.072" x2="379.616" y2="280.694"/>
+  <text font-size="9.6" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="486.132" y="279.292">
+    <tspan x="486.132" y="279.292">vector scan control, feedback, </tspan>
+    <tspan x="486.132" y="291.292">vector probe, ...</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:arial;font-style:oblique;font-weight:normal" x="68" y="40">
+    <tspan x="68" y="40">Linux 3.5: X11 &amp; GXSM</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:arial;font-style:oblique;font-weight:normal" x="68" y="240">
+    <tspan x="68" y="240">Signal Ranger MK3-A810 DSP </tspan>
+    <tspan x="68" y="260">TMS320C6424 / 590MHz </tspan>
+    <tspan x="68" y="280">+ XC3S400 FPGA </tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:arial;font-style:oblique;font-weight:normal" x="68" y="392">
+    <tspan x="68" y="392">Analog </tspan>
+    <tspan x="68" y="412">Hardware</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffffff" cx="268.797" cy="492.174" rx="32.7971" ry="20.1743"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="268.797" cy="492.174" rx="32.7971" ry="20.1743"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:700" x="268.797" y="495.324">
+      <tspan x="268.797" y="495.324">BB</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="201.094" cy="444.955" rx="33.0944" ry="20.9553"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" cx="201.094" cy="444.955" rx="33.0944" ry="20.9553"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:700" x="201.094" y="448.105">
+      <tspan x="201.094" y="448.105">Aux</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:oblique;font-weight:normal" x="360" y="452">
+    <tspan x="360" y="452">X Y Z</tspan>
+    <tspan x="360" y="468">+/- HV</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 207.591,537.087 A 167.983,167.983 0 0 0 280,566.474"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="223.361,539.048 205.772,535.788 213.718,551.815 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 159.566,350.379 A 301.311,301.311 0 0 0 168.246,501.536"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="164.467,365.509 160.003,348.186 148.823,362.151 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 281.348,510.812 A 158.261,158.261 0 0 0 297.369,538.511"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="282.596,532.49 298.678,540.323 295.295,522.757 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 300.472,346 A 292.897,292.897 0 0 0 268.931,467.53"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.211,453.587 268.847,469.765 277.207,453.95 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 191.655,350.28 A 133.195,133.195 0 0 0 192,424"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="195.014,365.806 192.263,348.13 179.773,360.936 "/>
+  </g>
+  <text font-size="9.6" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:oblique;font-weight:normal" x="225.5" y="404">
+    <tspan x="225.5" y="404">7 more AD</tspan>
+    <tspan x="225.5" y="416">channels</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 202.377,470.192 A 128.199,128.199 0 0 0 285.208,553.282"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="213.725,481.305 201.698,468.063 198.321,485.63 "/>
+  </g>
+  <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="388" y="364">
+    <tspan x="388" y="364">X,Y,Z-Scan &amp; Offset</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:oblique;font-weight:normal" x="308" y="364">
+    <tspan x="308" y="364">U</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 400.412 539.478 C 444,508 467.008,399.072 446.072,345.072"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="406.886,524.934 398.599,540.787 416.254,537.905 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 465.027,441.942 A 139.268,139.268 0 0 0 483.232,349.48"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.807,426.075 463.878,443.859 479.263,434.731 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="493.672,361.55 482.897,347.271 477.939,364.459 "/>
+  </g>
+  <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="544.748" y="359.05">
+    <tspan x="544.748" y="359.05">digital IO, Counter</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 348.381 527.528 C 348,472 328.377,500 327.561,426"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="340.287,513.819 348.397,529.764 356.287,513.709 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="521.454" y="108.727" width="61.0909" height="30.5454"/>
+    <ellipse style="fill: #ffffff" cx="551.999" cy="139.273" rx="30.5454" ry="8.72726"/>
+    <ellipse style="fill: #ffffff" cx="551.999" cy="108.727" rx="30.5454" ry="8.72726"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 108.727 L 521.454,139.273"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 582.545 108.727 L 582.545,139.273"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 108.727 C 521.454,103.907 539.95,100 551.999,100 C 564.049,100 582.545,103.907 582.545,108.727"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 108.727 C 521.454,113.547 539.95,117.455 551.999,117.455 C 564.049,117.455 582.545,113.547 582.545,108.727"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 116.364 C 521.454,121.183 539.95,125.091 551.999,125.091 C 564.049,125.091 582.545,121.183 582.545,116.364"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 124 C 521.454,128.82 539.95,132.727 551.999,132.727 C 564.049,132.727 582.545,128.82 582.545,124"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 131.636 C 521.454,136.456 539.95,140.364 551.999,140.364 C 564.049,140.364 582.545,136.456 582.545,131.636"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 521.454 139.273 C 521.454,144.093 539.95,148 551.999,148 C 564.049,148 582.545,144.093 582.545,139.273"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:courier new;font-style:normal;font-weight:normal" x="551.999" y="163.182">
+      <tspan x="551.999" y="163.182"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="574.689" cy="407.088" rx="74.8531" ry="31.7398"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="574.689" cy="407.088" rx="74.8531" ry="31.7398"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="574.689" y="403.238">
+      <tspan x="574.689" y="403.238">digital GXSM-Link:</tspan>
+      <tspan x="574.689" y="417.238">Gains &amp; Offsets</tspan>
+    </text>
+  </g>
+  <text font-size="9.6" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="542.5" y="47">
+    <tspan x="542.5" y="47">Python Remote Control </tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffffff" cx="504.889" cy="471.222" rx="110.327" ry="27.5818"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="504.889" cy="471.222" rx="110.327" ry="27.5818"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:700" x="504.889" y="467.372">
+      <tspan x="504.889" y="467.372">Coarse Approch/</tspan>
+      <tspan x="504.889" y="481.372">Slider Control</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="296.299" y="388" width="125.05" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="296.299" y="388" width="125.05" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="358.824" y="410.6">
+      <tspan x="358.824" y="410.6">Smart Piezo Drive</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="329.563" y1="236.372" x2="327.621" y2="383.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="319.803,369.66 327.591,385.764 335.801,369.871 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="268" y="308" width="129.888" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="268" y="308" width="129.888" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="332.944" y="330.6">
+      <tspan x="332.944" y="330.6">8 x DAC +/- 10 V</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="330.179" cy="263.721" rx="71.8315" ry="24.6612"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="330.179" cy="263.721" rx="71.8315" ry="24.6612"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="330.179" y="268.221">
+      <tspan x="330.179" y="268.221">DSP+FPGA</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" d="M 321.523,188.733 A 119.074,119.074 0 0 0 246.615,164.871"/>
+    <polygon style="fill: #000000" points="237.663,165.451 248.661,156.122 246.603,164.414 250.505,172.015 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" points="237.663,165.451 248.661,156.122 246.603,164.414 250.505,172.015 "/>
+    <polygon style="fill: #000000" points="328.49,194.385 314.218,192.311 321.797,188.368 324.915,180.413 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" points="328.49,194.385 314.218,192.311 321.797,188.368 324.915,180.413 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="186.749" cy="172.385" rx="49.4815" ry="19.0033"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="186.749" cy="172.385" rx="49.4815" ry="19.0033"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="186.749" y="175.985">
+      <tspan x="186.749" y="175.985"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="186.749" cy="165.618" rx="50.3847" ry="19.3502"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="186.749" cy="165.618" rx="50.3847" ry="19.3502"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="186.749" y="169.218">
+      <tspan x="186.749" y="169.218">SR-HwI</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="126.939" cy="141.216" rx="53.9275" ry="24.1963"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="126.939" cy="141.216" rx="53.9275" ry="24.1963"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="126.939" y="145.716">
+      <tspan x="126.939" y="145.716"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="126.939" cy="133.236" rx="53.9275" ry="24.1963"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="126.939" cy="133.236" rx="53.9275" ry="24.1963"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="126.939" y="137.736">
+      <tspan x="126.939" y="137.736"></tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="126.939" cy="124.755" rx="53.9802" ry="24.2199"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="126.939" cy="124.755" rx="53.9802" ry="24.2199"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="126.939" y="129.255">
+      <tspan x="126.939" y="129.255">Plug-Ins</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="199" y="234">
+    <tspan x="199" y="234"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="358.824" y="407">
+    <tspan x="358.824" y="407"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="329.563" y="215.861">
+    <tspan x="329.563" y="215.861"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="329.563" y="215.861">
+    <tspan x="329.563" y="215.861"></tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="620.1,194.55 651.601,215.061 620.1,235.572 588.6,215.061 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="620.1,194.55 651.601,215.061 620.1,235.572 588.6,215.061 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="620.1" y="217.761">
+      <tspan x="620.1" y="217.761">USB</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="578" y="46.25">
+    <tspan x="578" y="46.25"></tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 618.795 190.273 C 602,135.25 386,150.25 347.961,202.002"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="607.125,179.444 619.448,192.411 622.428,174.773 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="349.667,186.173 346.637,203.803 362.559,195.649 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffd300" cx="613.641" cy="151.822" rx="48.678" ry="20.6146"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="613.641" cy="151.822" rx="48.678" ry="20.6146"/>
+    <text font-size="10.16" style="fill: #000000;text-anchor:middle;font-family:arial;font-style:normal;font-weight:normal" x="613.641" y="154.672">
+      <tspan x="613.641" y="154.672">SPD Control</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="613.641" y="151.822">
+    <tspan x="613.641" y="151.822"></tspan>
+  </text>
+  <text font-size="9.03097" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="613.641" y="151.822">
+    <tspan x="613.641" y="151.822"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="613.641" y="151.822">
+    <tspan x="613.641" y="151.822"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="123" y="31.25">
+    <tspan x="123" y="31.25"></tspan>
+  </text>
+</svg>

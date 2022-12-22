@@ -1,0 +1,186 @@
+%/* Gxsm-3.0 - Gnome X Scanning Microscopy
+% * universal STM/AFM/SARLS/SPALEED/... controlling and
+% * data analysis software: Documentation
+% * 
+% * This software is based on the earlier documentation of XSM, GXSM and GXSM2
+% * 
+% * Copyright (C) 2017 Percy Zahl, Thorsten Wagner
+% *
+% * Authors: Percy Zahl <zahl@users.sf.net>, Andreas Klust <klust@users.sf.net>, Thorsten Wagner <stm@users.sf.net>
+% * WWW Home: http://gxsm.sf.net
+% *
+% * This program is free software: you can redistribute it and/or modify
+% * it under the terms of the GNU General Public License as published by
+% * the Free Software Foundation, either version 3 of the License, or
+% * (at your option) any later version.
+% *    
+% * This program is distributed in the hope that it will be useful,
+% * but WITHOUT ANY WARRANTY; without even the implied warranty of
+% * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% * GNU General Public License for more details.
+% *   
+% * You should have received a copy of the GNU General Public License
+% * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% */
+
+\documentclass[twoside,headsepline,bibliography=totoc,index=totoc,pdftex]{scrbook}
+
+\usepackage{wasysym}
+\usepackage{makeidx}    % Index creation
+\usepackage{textcomp} 
+\usepackage{gensymb} 
+\usepackage{fourier} 
+
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[pdftex]{graphicx}
+\usepackage{grffile}
+\usepackage{amstext}
+\usepackage{alltt}      % nicer verbatim
+
+\usepackage{mypdf}      % Setup PDF Features
+\usepackage{ctable}
+\usepackage{longtable}
+
+\usepackage[style=numeric-comp,backend=biber,sorting=none, sortcites=true, defernumbers=false,bibencoding=utf8, safeinputenc, url=false, isbn=false,mcite=true, maxcitenames=10, mincitenames=3]{biblatex}
+\AtEveryBibitem{
+	\clearfield{day}
+	\clearfield{month}
+	\clearfield{endday}
+	\clearfield{endmonth}
+	\clearfield{issue}
+	\clearfield{url}
+	\clearfield{issn}
+	\clearfield{isbn}
+	\clearfield{eprint}
+	\clearfield{number}
+}
+\bibliography{Gxsm-3.0-References}
+
+\makeindex
+
+% macro definitions
+\input{latex/Gxsm-3.0-macros}
+
+
+\title{The \Gxsm\ manual}
+\author{
+  \includegraphics[width=3cm]{images/Gxsm-3.0-icon.pdf}\\[5mm]
+  Percy Zahl, Andreas Klust, Stefan Schr\"oder, Thorsten Wagner\\
+  and more \url{http://gxsm.sf.net}
+}
+
+\begin{document}
+\nocite{Zahl03RSI74_1222}	
+\nocite{Zahl10JVSTB28_C4E39}
+\nocite{Zahl15IM17_38}
+
+\maketitle
+
+\include{latex/Gxsm-3.0-preface}
+
+\tableofcontents
+
+%
+% Introduction
+%
+\include{latex/Gxsm-3.0-intro}
+
+%
+% Installation
+%
+\include{latex/Gxsm-3.0-installation}
+\include{latex/Gxsm-3.0-quickstart}
+\include{latex/Gxsm-3.0-hacks}
+%
+% The GXSM core functionality
+%
+\part{The \Gxsm\ core}
+
+% general stuff:
+% - program start
+% - main window
+% - the multi-channel concept
+\include{latex/Gxsm-3.0-general}
+
+% data visualisation
+% - views and those features
+% - on the fly transformations
+\include{latex/Gxsm-3.0-visual}
+
+% configuration
+\include{latex/Gxsm-3.0-config}
+
+% remote control
+%\include{latex/Gxsm-3.0-remote}
+
+%
+% Part two - plug-ins
+%
+\part{Plug-ins}
+
+% general info on the plug-in concept
+\include{latex/Gxsm-3.0-plugins}
+
+% The plug-in documentation is created dynamically by the perl script
+% docuscangxsmplugins.pl, generating the file
+% Gxsm-plugins-manual.tex
+\include{latex/Gxsm-3.0-plugins-manual}
+
+\include{latex/Gxsm-3.0-plugins-undocumented}
+
+%
+% Part three - DSP software
+%
+\part{Digital signal processing subsystem}
+
+\include{latex/Gxsm-3.0-DSP-introduction}
+
+%\include{tex/Gxsm-3.0-DSP-PCI32}
+%\include{tex/Gxsm-3.0-DSP-software}
+%\include{tex/Gxsm-3.0-PCI32-module-install}
+
+%\include{tex/Gxsm-3.0-BurrBrown-SPA}
+
+%\include{latex/Gxsm-3.0-SRangerDSP}
+\include{latex/Gxsm-3.0-SRangerMk2-A810-DSP}
+
+
+%
+% switch to appendix
+%
+\part{Appendix}
+\appendix
+
+%
+% More about Python and License
+%
+\cleardoublepage
+%\appendix
+\begin{appendix}
+%\include{tex/Gxsm-3.0-python}
+\include{latex/Gxsm-3.0-gpl}
+\end{appendix}
+
+
+% ----------------------------------------
+% Bibliography
+% ----------------------------------------
+
+\printbibliography[heading=bibintoc,title={References},keyword=gxsm]
+\part{Index}
+
+% ----------------------------------------
+% Index
+% ----------------------------------------
+
+\cleardoublepage
+\refstepcounter{chapter}
+\printindex
+ 
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "Gxsm-main"
+%%% End: 

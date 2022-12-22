@@ -1,8 +1,5 @@
 #
-# DSP Project Documentation Makefile
-#
-# $Header: ~/gxsm3-manual/Makefile,v 1.5 2017-02-05 stm Exp $
-#
+# This file is part of Gxsm
 #
 
 .PHONY: html
@@ -27,11 +24,14 @@ ALLTEXSRCS = $(ALLTEXFILES)
 
 all: pdfmanual
 
+prepare:
+	bash helpers/bootstrap_buildenvironment.sh
+
 pdfmanual:
-	./make-gxsm-manual.sh
+	bash helpers/make-gxsm-manual.sh
 
 install: 
-	if !(test -f "Gxsm-3.0-Manual.pdf"); then ./make-gxsm-manual.sh; fi;
+	if !(test -f "Gxsm-3.0-Manual.pdf"); then ./helpers/make-gxsm-manual.sh; fi;
 	install -o root -g root Gxsm-3.0-Manual.pdf $(INSTALLDIR)
 
 clean:

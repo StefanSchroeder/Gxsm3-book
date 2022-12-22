@@ -1,0 +1,269 @@
+%/* Gxsm - Gnome X Scanning Microscopy
+% * universal STM/AFM/SARLS/SPALEED/... controlling and
+% * data analysis software: Documentation
+% * 
+% * Copyright (C) 1999,2000,2001 Percy Zahl
+% *
+% * Authors: Percy Zahl <zahl@users.sf.net>
+% * additional features: Andreas Klust <klust@users.sf.net>
+% * WWW Home: http://gxsm.sf.net
+% *
+% * This program is free software; you can redistribute it and/or modify
+% * it under the terms of the GNU General Public License as published by
+% * the Free Software Foundation; either version 2 of the License, or
+% * (at your option) any later version.
+% *
+% * This program is distributed in the hope that it will be useful,
+% * but WITHOUT ANY WARRANTY; without even the implied warranty of
+% * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% * GNU General Public License for more details.
+% *
+% * You should have received a copy of the GNU General Public License
+% * along with this program; if not, write to the Free Software
+% * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+% */
+
+
+\chapter{Front Matter}
+\label{ch:frontmatter}
+
+\large\textbf{
+ The Gxsm Project: Gxsm itself, drivers, utilities, demos and documentation\\[2mm]
+ Copyright (C) 1999 - 2017 Percy Zahl, Andreas Klust, et al\\
+ Email: \GxsmEmail{zahl@users.sourceforge.net}}
+\large\textbf{WWW: \GxsmWWW{gxsm.sourceforge.net}}\\
+
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; see the file COPYING. If not, write to
+ the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ Boston, MA 02111-1307, USA.
+
+ See the end of this document for complete license: Appendix~\ref{app:gpl}
+
+\newpage
+
+\chapter{Introduction}
+\marginpar{\includegraphics[width=1in]{images/GXSM-penguin}}
+
+\label{ch:intro}
+
+\Gxsm\footnote{The Project can be found in the Internet at
+\GxsmWWW{gxsm.sourceforge.net}} -- Gnome X Scanning Microscopy -- is
+a powerful graphical interface for any kind of 2D and 3D (multi layered
+2D mode) data acquisition methods, especially designed for scanning
+probe microscopy (SPM).
+
+\GxsmScreenShot{gxsm3-main}{Gxsm3 (version 3.47.0 Action Eclipse) Main Scan Control Window.}
+
+The aim of the \Gxsm-project is to provide a versatile control system being 
+suitable to operate all different kinds of scanning probe microscopes. This 
+includes in particular scanning tunneling microscopes (STMs) and atomic force 
+microscopes (AFMs), but it is not restricted to these types. In principle, it
+is also flexible enough to operate scanning angle resolved light scattering 
+(SARLS) experiments or spot profile analysis of low-energy electron diffraction
+(SPA-LEED) optics. One reason for this versatility is that all these instrument
+have in common a 2D-data acquisition by scanning sequentially points in the 
+$xy$-plane.
+
+Certainly, \Gxsm\ gains also versatility, because of its design concept: a DSP
+(digital signal processor) based hardware is used for the data acquisition, the
+scan signal generation and various feedback lopes ($z$ distance between tip 
+and sample but also the oscillation control of an NC-AFM). The graphical user 
+interface (GUI) provides not only tools for 1D (line profiles), 2D (images), 3D 
+(morphology), and even 4D (time series) data visualization, but also for
+manipulation and analysis. As the GUI is based on plug-ins, it can be easily
+extended to new tasks. 
+
+A third aspect is the python interface of \Gxsm\ allowing to control the GUI
+remotely at almost real-time level. The performance of the python scripting is
+more than sufficient to provide a functionality far beyond batch acquisition
+and processing of data, but also allowing to code complex data aquisition tasks
+without programming anything directly on DSP level.
+
+The project was founded at the Institute for Solid State
+Physics\footnote{Institut für Festkörperphysik, Universität Hannover,
+ Appelstraße 2, D-30167 Hannover, Germany\\
+ www.fkp.uni-hannover.de} Leading developer of \Gxsm\ is Percy
+Zahl\footnote{e-mail: zahl@users.sourceforge.net}, but more than 50 SPM groups
+world wide are not just using \Gxsm\ but also contribute to its further
+development. The program was developed for Linux\footnote{For example Debian 
+9.3} using the Gtk$+$/Gnome libraries\footnote{\Gxsm\ currently requires Gnome 
+3.2 and GTK+3.22} for the GUI.
+ 
+And best of all: it's free! \Gxsm\ is licensed under the terms of the
+GNU General Public License (GPL, see \ref{app:gpl}). Therefore,
+everyone can copy, use, and modify \Gxsm\ for his/her needs provided
+that the resulting software is again published under the GPL licence.
+
+The following list gives a short overview on the main features of \Gxsm:
+\begin{itemize}
+\item Support for STM, AFM, and any other 2D (2D layered and multi-channel) 
+data-acquisition method can be supported by \Gxsm.
+
+\item The \Gxsm\ core handles multiple channels of 2D (layered) data fields of
+arbitrary type and unlimited size and a grey-scale or false color view of 2D 
+data image, using ''on the fly'' data transformation as there are: 
+% could be removed here as there is a whole chapter about the visualisation!!! 
+\begin{itemize}
+ \item ''Quick'': a line regression and subtraction is performed on
+ each scan-line
+ \item ''Direct'': only contrast and brightness adjustments 
+ \item ''Direct HiLit'': same as direct but marks the lowest and highest values
+ \item ''Plane'': on-the-fly 3-point defined plane subtraction
+ \item ''Logarithmic'': logarithmic scaling mode, almost used by
+ diffraction methods
+ \item ''Horizontal'': automatic line average subtraction
+ \item ''Differential'': view of X-derivative, $[Z(X+1)-Z(X)]$
+ \item ''Periodic'': like ''Direct'' Mode, but grey-scale is applied
+ modulo \#grey-levels
+ \item More sophisticated background correction and data analysis
+ methods are implemented as filters.
+ \end{itemize}
+For more details on the different modes of the visualization of the data see Chap.~\ref{ch:visual}.
+
+\item Data presentation is by default a (grey or false color) image
+ but it can be switched to a profile view (1d), profile extraction
+ on the fly... Or you can use a 3D shaded view (using OpenGL 4.6) which
+ now offers a sophisticated scene setup.
+
+\item The ''high-level'' scan controller is now separated from the \Gxsm\
+ core and is build as PlugIn, while the real-time ''low-level''
+ scanning process, data-acquisition and feedback loop (if needed),
+ runs on the DSP -- if present, else a dummy image is produced. The
+ current scan-line, marked in red, can be viewed simultaneously as
+ profile. (View$\rightarrow$red Profile)
+ 
+\item Extremely flexible configuration of user settings and data
+ acquisition and probe modes.
+
+ \begin{itemize}
+ \item Easy to extend by Plug-ins, some examples of existing
+ Plug-ins:
+ \begin{itemize}
+ \item Background correction methods
+ \item Image filtering 1D and 2D, including several Fourier
+ transformation methods
+ \item Image analysis/statistics: histogram, step analysis, ...
+ \item Geometric transformations: scaling, rotation, affine, ...
+ \item and more, write and contribute your favorite math Plug-in
+ for \Gxsm! Don't be afraid, there is a step by step
+ instruction tutorial and a math Plug-in generator, all you
+ need to do is to add your math code!
+ \end{itemize}
+
+ \item Special datafile/formats import/export filters, (extendable via PlugIns):
+ \begin{itemize}
+ \item a set of simple raw formats (.byt,.sht,.flt,...), see \ref{pi:primitiveimexport}
+ \item Digital Instruments/Veeco Metrology Group, NanoScope (import) (\GxsmWWW{veeco.com}, see \ref{pi:nanoimport})
+ \item Omicron NanoTechnology, Scala (\GxsmWWW{www.omicron.de}, see \ref{pi:OmicronIO})
+ \item WSxM/Nanotec Electronica SPM, WSxM (\GxsmWWW{www.nanotec.es}, see \ref{pi:WSxMio})
+ \item SDF (Surface Data Format, see \ref{pi:sdfimport})
+ \item UK2000 v3.4, see \ref{pi:UK2kimport}
+ \item G. Meyer STMAFM, see \ref{pi:gmeyerimexport}
+ \item Park Scientific (AFM, basic import support, see \ref{pi:primitiveimexport})
+ \item ``d2d'' data format (SPA--LEED), used by ``spa4'' and ``xspa'', see \ref{pi:spa4imexport}
+ \item any NetCDF file containing a 2D data array
+ \item Grey Images in .pgm format (P5 type), see \ref{pi:pngImExport}
+ \item PNG image format, see \ref{pi:pngImExport}
+ \item Targa (.tga) export, in 8/16/24bits color depth, \ref{pi:primitiveimexport}
+ \end{itemize}
+
+ \item Special instrument control Plug-Ins:
+ \begin{itemize}
+ \item a Scan Control Panel
+ \item SPM: DSP Control: Feedback and Scan Characteristics
+ (Speed, ...)
+ \item SPM: Mover/slider and auto approach controls
+ \item SPM: flexible Probing: Spectroscopy (STS), Force-Distance
+ Curves (AFM), using the DSP also Digital LockIn Probing (e.g.
+ dI/dU (U)) is possible without any additional hardware! But
+ not only SPM, I already ran our Quadrupole Mass Analyzer with
+ it!
+ \item Phase Lock Loop (PLL) operation in combination with the SR-MK3Pro \& A810 boards (with enabled PLL option)
+% \item SPA-LEED: Peak Finder, Focus-Tool, Rate-Meter, Peak
+% Intensity Monitor (used with SPA-LEED test module)
+% \item SPA-LEED Control (used with SPA-LEED test module)
+% \item CCD control (very special, just for gurus)
+	
+ \end{itemize}
+
+ \item NanoPlotter Plug-in: reads simple HPGL files and moves along the
+ plot path using predefined DSP settings (U, I, Feedback Parameters,
+ Speed, ...) for ''Pen-Up'' and ''Pen-Down'' movements. This was in
+ principle already possible via the remote control and a script, but
+ now it's much more convenient and user friendly! Even the path is
+ shown ... can be modified, saved and re plotted!
+
+ \item A Plug-in categorizing mechanism automatically only loads the
+ required Plug-Ins for the actual setup: E.g. no Hardware Control
+ Plug-ins are loaded in ''offline'' Data Analysis Mode.
+
+ \item At the time there are more than 80 Plug-ins.
+ \end{itemize}
+
+\item \Gxsm\ itself is fully hardware independent. It provides a
+ generic hardware-interface (HwI) plugin infrastructure to attach
+ any kind of hardware. The HwI has to manage low level tasks and
+ pass the data to the GXSM core, plus, it has to provide the
+ necessary GUI to provide user access and control to
+ hardware/instrument specific parameters and tasks.
+ 
+\item Scan parameter changing on the fly -- you can modify the
+ feedback parameters or switch the tunneling voltage
+ while scanning in between scan lines. For example: Imagine you are
+ scanning a STM topography and current Image, the surface looks flat,
+ then just change the feedback parameters to CP=0 and CI=1e-5
+ (something small) and now you are in constant height mode!
+ 
+\item On the fly, even while scanning is in progress, you can view
+ profiles, extract data parts, re-scale -- just do all you like!
+ 
+\item Event mechanism: User ``Events'' like bias change are now logged
+ and attached to the scan data and can be visualized (Position
+ marker). Other events like ``Probe'' (any kind of spectroscopy
+ or manipulation) while or after scanning are automatically
+ attached to the scan with all data and can be visualized via a
+ single mouse click. The same for automatic rastered ``Probe'' scanning.
+
+\item Python Remote Control Interface: The \Gxsm\ scanning progress is fully
+ scriptable using python. Or may be used to automatize math/data
+ analysis tasks.
+ 
+\item Cross Platform: works on i386 and PPC based Linux distributions; a Windows port besides the main stream is available\footnote{\GxsmWWWx{gxsm4w.sf.net}{http://gxsm4w.sf.net}}.
+ 
+\item \Gxsm\ takes full advantage of the NetCDF data format.
+ 
+\item Scan auto saving, session logging, Plug-in details browser,
+ NC-View, PS-Printing and a Icon generator are available too.
+ 
+%\item Included Add Ons:
+%\item Linux COFF loader to launch the DSP program on the SRanger hardware (old:
+% PC31, PCI32 cards are not any longer GXSM main stream).
+% See the SRanger Linux project\footnote{included in the SRanger project related
+% to Gxsm, refer to \GxsmWWW{sranger.sourceforge.net}}.
+%\item the required kernel modules
+%\item A universal SRanger DSP binary (precompiled, in COFF format).
+%\item A set of external utilities written in Python for monitoring and
+% configuring the DSP board.
+\end{itemize}
+
+The \Gxsm\ software can be divided into three parts: First, the \Gxsm\ core
+providing the main functionality for handling and visualization of data
+described in the first part of this manual. The basic functions of the
+\Gxsm\ core can be extended using plug-ins. Plug-ins are small pieces of
+software dynamically linked to the core. The plug-ins are described in the
+second part of the manual. The third part documents the digital signal
+processing (DSP) software needed to carry out actual measurements. The DSP
+software is not necessary for applications using \Gxsm\ only for data
+analysis purposes.

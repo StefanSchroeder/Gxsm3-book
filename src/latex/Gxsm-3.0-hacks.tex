@@ -23,20 +23,47 @@
 % * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 % */
 
-\chapter{\Gxsm\ Tipps and Tricks}
+\chapter{\Gxsm\ Tips and Tricks}
 \label{cha:Gxsm-hacks}
-\index{Tipps and Tricks}
-\section{Running Two Instances of \Gxsm\ }
-Because of \Gxsm\ and glib's new application management, any attempt to start a new "instance" on the same user session/account will NOT span a new process per default, but connect to an eventually existing \Gxsm process -- no matter if running with hardware connected or not.
+\index{Tips and Tricks}
+\section{Running Two Instances of \Gxsm}
 
-This is unfortunate in case that you want a independent process for just reviewing data on the same login/X11 display while running \Gxsm\ in data aquisition mode the same time.
+\begin{description}
+  \item[Problem] \mbox{}\\ You want to run a second instance of
+	\Gxsm{} without interfering with a running measurement.
+  \item[Underlying issue] \mbox{}\\ 
+	Because of \Gxsm's and glib's new application management, any attempt
+	to start a new instance on the same user session/account will
+	\emph{not} spawn a new process per default, but connect to an existing
+	\Gxsm{} process -- no matter if the system is running with hardware
+	connected or not.
 
-To circumvent this complication create a new user account (here simply named "gxsm@localhost") for analysis and run a \GxsmCmd{ssh -X} (with auto X forwarding) session on your current account while \Gxsm\ may be running with hardware connection on "this localhost" like shown below. Here "user@spm" is the actual user and machine running the X11 session on this machine with hardware.
+	This is unfortunate in case that you want an independent process for
+	just reviewing data on the same login/X11 display while running \Gxsm\
+	in data aquisition mode at the same time.
+  \item[Solution] \mbox{}\\ 
+\begin{tabular}{ll}
+	Step 1 & Create a new user account. As root run \texttt{\#adduser alice}\\
+	Step 2 & Setup a password for the new user.\\
+	Step 3 & Run as the new user: \texttt{\$ssh -X alice@localhost gxsm3 -h no} \\
+	Note: & SSHD must be configured to allow X11-forwarding.
+\end{tabular}
+\end{description}
 
-If no alternative account exists, simply run as root \GxsmCmd{adduser gxsm} before.
-
-Terminal output/sesper defaultsion example:\\ \\
-\textbf{user@spm}\GxsmCmd{ssh -X gxsm@localhost}\\ \\
-Within this new session/terminal you can safely start a new instance of \Gxsm .\\ \\
-\textbf{gxsm@localhost}\GxsmCmd{gxsm3 -h no}\\ \\
-.... now you have a new \Gxsm\ application running and it will also accept drag and drop from nautilus while in no means disturbing any existing gxsm3 process :)
+%To circumvent this complication, create a new user account (which we
+%will call ``gxsm@localhost'' for analysis and run a \GxsmCmd{ssh -X} (with
+%auto X forwarding) session on your current account while \Gxsm\ may be
+%running with hardware connection on ``this localhost'' like shown below.
+%Here ``user@spm'' is the current user and machine running the X11 session
+%on this machine with hardware.
+%
+%If no alternative account exists, simply run as root \GxsmCmd{adduser gxsm} before.
+%
+%Terminal output/sesper defaultsion example:\\ \\
+%\textbf{user@spm}\GxsmCmd{ssh -X gxsm@localhost}\\ \\ Within this new
+%session/terminal you can safely start a new instance of \Gxsm .\\ \\
+%\textbf{gxsm@localhost}\GxsmCmd{gxsm3 -h no}\\ 
+%
+%Now you have a new \Gxsm\ application running and it will also accept
+%drag and drop from nautilus while in no means disturbing any existing
+%\Gxsm\ process :)

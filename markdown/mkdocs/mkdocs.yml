@@ -1,0 +1,4 @@
+site_name: Gxsm-3.0-Manual
+nav:
+    - Preface: 02_Gxsm-3.0-Preface.md
+    - Intro: 03_Gxsm-3.0-Intro.md

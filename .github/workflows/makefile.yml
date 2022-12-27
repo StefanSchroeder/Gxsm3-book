@@ -20,18 +20,13 @@ jobs:
     - name: Build PDF from Tex-source
       run: make 
 
-    - name: Build PDF from Markdown-source
-      run: pushd markdown && make && make pages && popd
-
-    - name: Where are we now
-      run: pwd && ls && ls src && ls markdown
-
-    - name: Publish docs
-      run: pushd markdown/mkdocs && mkdocs gh-deploy && popd
-
     - name: Store result PDF
       uses: actions/upload-artifact@v3
       with:
         name: pdf-result
-        path: markdown/test.pdf src/*.pdf
+        path: src/*.pdf
+
+    - name: Publish docs
+      run: pushd markdown/mkdocs && mkdocs gh-deploy && popd
+
 

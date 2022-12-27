@@ -1,4 +1,10 @@
 site_name: Gxsm-3.0-Manual
 nav:
-    - Preface: 02_Gxsm-3.0-Preface.md
-    - Intro: 03_Gxsm-3.0-Intro.md
+    - Preface:       02_Gxsm-3.0-Preface.md
+    - Intro:         03_Gxsm-3.0-Intro.md
+    - Quickstart:    04_Gxsm-3.0-Quickstart.md
+    - Hacks:         05_Gxsm-3.0-Hacks.md
+    - General:       06_Gxsm-3.0-General.md
+    - Visual:        07_Gxsm-3.0-Visual.md
+    - Config:        08_Gxsm-3.0-Config.md
+    - License:       99-Gxsm-3.0-gpl.md

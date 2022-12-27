@@ -21,7 +21,10 @@ jobs:
       run: make 
 
     - name: Build PDF from Markdown-source
-      run: cd markdown && make && make pages
+      run: pushd markdown && make && make pages && popd
+
+    - name: Where are we now
+      run: pwd && ls
 
     - name: Store result PDF
       uses: actions/upload-artifact@v3

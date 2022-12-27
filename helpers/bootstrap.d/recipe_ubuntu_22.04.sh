@@ -12,4 +12,6 @@ apt -y install texlive-latex-recommended \
 	latexmk \
 	biber
 	
+apt -y install pandoc mkdocs mkdocs-material
+
 

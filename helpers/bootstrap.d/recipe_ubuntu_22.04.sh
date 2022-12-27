@@ -1,5 +1,5 @@
 
-echo "This is the recipe for Ubuntu 22.04 lts."
+echo "This is the recipe for Ubuntu 22.04 LTS."
 
 apt -y install texlive-latex-recommended \
 	texlive-latex-base \
@@ -12,6 +12,6 @@ apt -y install texlive-latex-recommended \
 	latexmk \
 	biber
 	
-apt -y install pandoc mkdocs mkdocs-material
-
+apt -y install pandoc mkdocs mkdocs-nature \
+	mkdocs-autorefs mkdocs-bootstrap
 

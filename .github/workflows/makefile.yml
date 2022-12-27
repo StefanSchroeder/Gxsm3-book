@@ -17,11 +17,15 @@ jobs:
     - name: Install dependencies
       run: sudo make prepare
 
-    - name: Build PDF
+    - name: Build PDF from Tex-source
       run: make 
+
+    - name: Build PDF from Markdown-source
+      run: cd markdown && make && make pages
 
     - name: Store result PDF
       uses: actions/upload-artifact@v3
       with:
         name: pdf-result
-        path: src/*.pdf
+        path: markdown/test.pdf src/*.pdf
+

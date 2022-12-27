@@ -4,3 +4,5 @@ all:
 
 serve:
 	cd mkdocs && mkdocs serve
+pages:
+	cd mkdocs && mkdocs build

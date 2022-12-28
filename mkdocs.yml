@@ -1,5 +1,6 @@
 site_name: Gxsm-3.0-Manual
 nav:
+    - Home:          index.md
     - Preface:       02_Gxsm-3.0-Preface.md
     - Intro:         03_Gxsm-3.0-Intro.md
     - Quickstart:    04_Gxsm-3.0-Quickstart.md

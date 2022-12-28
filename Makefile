@@ -32,7 +32,7 @@ markdown:
 		--number-sections \
 		--listings \
 		--pdf-engine pdflatex --toc \
-		--include-in-header markdown/titlesec.tex \
+		--include-in-header ../markdown/titlesec.tex \
 		-o test.pdf \
 		docs/*Gxsm*.md 
 

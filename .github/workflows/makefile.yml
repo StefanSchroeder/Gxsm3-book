@@ -30,4 +30,4 @@ jobs:
         path: test.pdf Gxsm-3.0-Manual.pdf
 
     - name: Publish docs
-      run: mkdocs gh-deploy
+      run: mkdocs gh-deploy --force

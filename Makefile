@@ -27,12 +27,13 @@ view:
 	xdg-open src/Gxsm-3.0-Manual.pdf
 
 markdown:
-	pandoc --template markdown/pandoc.template \
+	pandoc \
 		--resource-path docs \
 		--number-sections \
 		--listings \
 		--pdf-engine pdflatex --toc \
 		--include-in-header ../markdown/titlesec.tex \
+		--template ../markdown/pandoc.template \
 		-o test.pdf \
 		docs/*Gxsm*.md 
 

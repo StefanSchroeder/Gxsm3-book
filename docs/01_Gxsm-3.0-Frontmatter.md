@@ -5,6 +5,6 @@ rights:  Creative Commons Non-Commercial Share Alike 3.0
 language: en-US
 fontsize: 12pt
 fontfamily: avant
+graphics: true
 ---
-
 

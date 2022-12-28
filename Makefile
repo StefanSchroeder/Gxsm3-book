@@ -2,7 +2,7 @@
 # This file is part of Gxsm
 #
 
-.PHONY: html
+.PHONY: html markdown pages
 
 HTMLDIR = html
 
@@ -42,3 +42,8 @@ html:
 view:
 	xdg-open src/Gxsm-3.0-Manual.pdf
 
+markdown:
+	pandoc --number-sections --pdf-engine pdflatex --toc --include-in-header markdown/titlesec.tex -o test.pdf \
+		mkdocs/docs/*.md 
+pages:
+	mkdocs build

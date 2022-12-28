@@ -30,6 +30,7 @@ markdown:
 	pandoc --template markdown/pandoc.template \
 		--resource-path docs \
 		--number-sections \
+		--listings \
 		--pdf-engine pdflatex --toc \
 		--include-in-header markdown/titlesec.tex \
 		-o test.pdf \

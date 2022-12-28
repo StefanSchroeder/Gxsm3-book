@@ -453,6 +453,7 @@ and freely via Python programmable SPM actions! Now VP probing and
 Mover/Autoapproach can by fully controlled via Gxsm-Python-Remote (via
 the "emb" interface). Here is a little sneak peak script:
 
+```python
     import emb as gxsm
 
     gxsm.set ("DSP_Bias","0.1")
@@ -469,6 +470,7 @@ the "emb" interface). Here is a little sneak peak script:
         gxsm.set ("DSP_IV-End","1")
         gxsm.action ("DSP_VP_IV_EXECUTE")
         gxsm.sleep (10)
+```
 
 PS: New Motto: "Gxsm is a glove to your SPM experiment" -- this said, we
 claim you have free hands to do pretty much all you like in a instant

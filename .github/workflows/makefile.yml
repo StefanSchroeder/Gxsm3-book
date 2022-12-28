@@ -27,7 +27,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: pdf-result
-        path: *.pdf
+        path: *
 
     - name: Publish docs
       run: mkdocs gh-deploy --force

@@ -46,7 +46,7 @@ popd
 
 cat docuscan.log
 
-echo "------------------------------------------------"
+echo "-------------------------------------------------------------------"
 echo -n "Result of PDF-generation (./Gxsm-3.0-Manual.pdf): "
 if [ -f ./src/Gxsm-3.0-Manual.pdf ] ; then
    echo "SUCCESS"
@@ -54,7 +54,7 @@ if [ -f ./src/Gxsm-3.0-Manual.pdf ] ; then
 else
    echo "ERROR"
 fi
-echo "------------------------------------------------"
+echo "-------------------------------------------------------------------"
 
 echo "Done."
 

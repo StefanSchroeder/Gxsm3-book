@@ -28,7 +28,9 @@ view:
 
 markdown:
 	pandoc --number-sections --pdf-engine pdflatex --toc --include-in-header markdown/titlesec.tex -o test.pdf \
-		docs/*.md 
+		docs/*Gxsm*.md 
+	ls test.pdf
+
 pages:
 	mkdocs build
 

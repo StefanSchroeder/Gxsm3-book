@@ -17,8 +17,11 @@ jobs:
     - name: Install dependencies
       run: sudo make prepare
 
-    - name: Build PDF from Tex-source and Markdown
-      run: make && make markdown
+    - name: Build PDF from Tex-source 
+      run: make
+
+    - name: Build PDF from Markdown
+      run: make markdown
 
     - name: Store result PDF
       uses: actions/upload-artifact@v3
@@ -28,5 +31,3 @@ jobs:
 
     - name: Publish docs
       run: mkdocs gh-deploy
-
-

@@ -42,3 +42,14 @@ please let us know in the forums. Please contribute
 the instructions for your distro if you have been
 able to figure the dependencies out yourself.
 
+Consider using Eisvogel:
+
+https://github.com/Wandmalfarbe/pandoc-latex-template
+
+pandoc-latex-environment:
+  noteblock: [note]
+  tipblock: [tip]
+  warningblock: [warning]
+  cautionblock: [caution]
+  importantblock: [important]
+...

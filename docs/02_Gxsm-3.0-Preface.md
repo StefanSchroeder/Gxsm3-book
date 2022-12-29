@@ -566,6 +566,7 @@ auto-fit.
 Well, read about the actual outcome in the SRanger Mk2/3 HwI plugin
 chapter [\[SR-Mark3\]](#SR-Mark3){reference-type="ref"
 reference="SR-Mark3"}.\
+
 Gxsm Central, Rocky Point, Long Island, NY, USA,\
 March 29th, 2014 Percy Zahl
 
@@ -578,12 +579,12 @@ long since myt last update here. But finally a e- or re-volution."
 We got a all new fully high definiton capable GTK3 compliant GUI! That
 was some act.
 
-GXSMScreenShotGXSM3-50-1-RTE
+![Gxsm3-50-1-RTE](screenshots/GXSM3-50-1-RTE.png)
 
-Beside many many new features, gxsm is now all into nc-AFM and provided
+Beside many many new features, Gxsm is now all into nc-AFM and provided
 dedicated tools for molecular imaging.
 
-Alongside a in many aspects enhanced gxsm python console with gxsm
+Alongside a in many aspects enhanced Gxsm python console with gxsm
 utility libraraies and include functionality and a growing python
 support libraray.
 
@@ -607,10 +608,9 @@ idle tasks. Also new a automatic RT task scheduling and enable/disable
 control -- all DSP based -- still provides a seamless and 100% backwards
 compatile DSP code from the "outside" point of view.
 
-Oh no\.... I need to rewrite the DSP under the hood section now.
+Oh, no \.... I need to rewrite the DSP under the hood section now.
 
-GXSMScreenShotMK3-RTEngine-processes-gxsm-terminal-viewReal Time Engine
-4 GXSM -- a RT process view.
+![Real Time Engine 4 GXSM -- a RT process view.](screenshots/MK3-RTEngine-processes-gxsm-terminal-view.png)
 
 But for the good, things just got better and faster!\
 Gxsm Central, Upton, Long Island, NY, USA,\

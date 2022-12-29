@@ -2,7 +2,7 @@
 # Preface
 []{#ch:preface label="ch:preface"}
 
-The  history and very early predecessors are dating back to 1995. It
+The GXSM history and very early predecessors are dating back to 1995. It
 came a long way even lived on different operating systems with initial
 DSP code fragments in C, Turbo-Pascal and ideas I have to give credit to
 Gerhard Meyer to get me started with the very very early stages of my
@@ -138,7 +138,7 @@ Dieses Werk soll im weiteren all denjenigen helfen, die einerseits mit
 gxsm arbeiten, aber auch etwas mehr über die Internas erfahren wollen.
 So gliedert sich das folgende Manual in
 
--   einenaenwendungsbezogenen Teil;
+-   einen anwendungsbezogenen Teil;
 
 -   nützliche Tips (HOWTOs zu STM und AFM); und
 
@@ -179,9 +179,10 @@ Gxsm-Projekts festhalten, nachdem meine Dissertation mit der
 Veröffentlichung meines Werkes zum Stress auf Oberflächen abgeschlossen
 ist.
 
-Das Gxsm-Projekt ist seit Herbst 2000 offiziell als Open-Source auf via
-Web-Interface und CVS-Access verfügbar. Die Verzeichnishirarchie wurde
-überarbeitet und "Gxsm" ist nun das Projekthauptverzeichnis.
+Das Gxsm-Projekt ist seit Herbst 2000 offiziell als Open-Source auf
+[Source-Forge](http://www.sourceforge.net) via Web-Interface und CVS-Access verfügbar. Die
+Verzeichnishierarchie wurde überarbeitet und "Gxsm" ist nun das
+Projekthauptverzeichnis.
 
 Im Dezember 2000 wurde ein flexibles Plug-In Interface für Gxsm
 entworfen und damit begonnen alle speziellen Erweiterungen in Plug-Ins
@@ -255,12 +256,12 @@ currently in development, in parallel the Gxsm2 SRanger support is
 created -- No results yet, but it all looks promising.\
 Golden, Colorado USA, February 2, 2003 Percy Zahl
 
-*... and Signal Ranger in daily data production!*
+*... GXSM-2 and Signal Ranger in daily data production!*
 
-It's a rainy Sunday, and the  manual is going to be revised to the
-version. The Signal Ranger documentation part is to be started ... but
-the Signal Ranger boards (SR-STD and SR-SP2) are now both supported --
-thanks to SoftDB for the friendly loan of the STD board!
+It's a rainy Sunday, and the GXSM manual is going to be revised to the
+GXSM-2 version. The Signal Ranger documentation part is to be started
+... but the Signal Ranger boards (SR-STD and SR-SP2) are now both
+supported -- thanks to SoftDB for the friendly loan of the STD board!
 
 Also I'm happy to say, the SR does a really good job in our lab as
 second/spare and testing DSP subsystem. The analog performance (noise
@@ -269,7 +270,8 @@ level) is outstanding: Using a huge scanning tube (XY: 1000Å/V, Z:
 Au(111)!\
 Adliswil, Switzerland, October 5th, 2003 Percy Zahl
 
-*... V1.8.4 and Signal Ranger going Multidimensional and Vector Probing*
+*... GXSM-2 V1.8.4 and Signal Ranger going Multidimensional and Vector
+Probing*
 
 Before all that, the SRanger kernel module for Linux Kernel 2.6.12 and
 higher was stabilized. The completion of the Vector Probe implementation
@@ -286,8 +288,8 @@ removed all remainings of hardware close parameters. These are now
 banned into the corresponding HwI plugins.\
 Rocky Point, Long Island, NY, USA, November 16th, 2005 Percy Zahl\
 
-*... V1.12.0 is released with full multidimensional data processing and
-visualization power*
+*... GXSM-2 V1.12.0 is released with full multidimensional data
+processing and visualization power*
 
 Several new add-ons were added, in brief:
 
@@ -321,7 +323,7 @@ Export of movies is possible using the Quicktime library. The new OSD
 any other parameters.\
 Rocky Point, Long Island, NY, USA, September 18th, 2007 Percy Zahl
 
-*... V1.22.0 releases and all new SPM dedicated SR-A810*
+*... GXSM-2 V1.22.0 releases and all new SPM dedicated SR-A810*
 
 The year 2009 is already going to its end, a nice sunny colorful fall
 day\... This year has brought big changes or better upgrades on DSP
@@ -390,9 +392,9 @@ Brookhaven National Laboratory - CFN, Upton, Long Island, NY, USA,
 October 29th, 2009 Percy Zahl
 
 *... from Version Numbers to "Battenkill Warrior", "Lancaster Classics",
-"Lindau Historic" to V1.27.3 "Arosa Express" -- get prepared for the
-high-end MK3Pro-A810/PLL and new GXSM optimized SPM HV-Amp what is now
-also available: the "Smart Piezo Drive" with serious DSP power and
+"Lindau Historic" to GXSM-2 V1.27.3 "Arosa Express" -- get prepared for
+the high-end MK3Pro-A810/PLL and new GXSM optimized SPM HV-Amp what is
+now also available: the "Smart Piezo Drive" with serious DSP power and
 featured under the hood not yet seen!*
 
 Not functional but just getting a little more "social" -- dedication
@@ -408,16 +410,17 @@ Full 3D Offset control and Linear Drift Correction via automated Offset
 adjusting. Also added helping aids to easy determine drift manually from
 manually to be identified features in scan(s) via \"Global Position
 Reference Mark\" and Time/Drift calculation for Point markers. (New
-options: If previously a Global Reference was set via any Point/Marker
-Object/Global Reference Point.
+options: GXSMMenuScan/View/Coordinates/(Time + Relative) If previously a
+Global Reference was set via any Point/Marker Object/Global Reference
+Point.
 
 Massive selections of hundreds of VectorProbe data files for example
 from or live while raster probing via easy DnD read back is not
 supported and very useful for life data inspection of long mapping runs.
 
-Always on going: new additions to the universal VP modes/tabs, including
-a dual folder with user arrangeable tabs for better work flow and
-overview. Example: segmented STS.
+Always on going: new additions to the universal GXSMx VP modes/tabs,
+including a dual folder with user arrangeable tabs for better work flow
+and overview. Example: segmented STS.
 
 "Lancaster Classics" is not providing much visible additions but
 introduces now a higher precision of the DSP level integer math moving
@@ -427,9 +430,9 @@ further enhancements of the HR signal output mode (native 16bit to near
 are included. Additions and new indicators for the PanView to
 incorporate GPIO and some DPS statemachine status indications.
 
-"Lindau Historic" -- incorporating a set of community ideas discussed
-and collected at the 2011 NC-AFM in Lindau. Most visible, the new a
-red-profile history. Some patches needed for newer Gkt+/Gnome/X11
+"Lindau Historic" -- incorporating a set of GXSMx community ideas
+discussed and collected at the 2011 NC-AFM in Lindau. Most visible, the
+new a red-profile history. Some patches needed for newer Gkt+/Gnome/X11
 releases. Few more options for VP-Z. New VP feature allows to program
 limits/triggers to stop a VP section, for example when a certain max
 force is reached. Also the Mk3-A810/PLL activities are evolving and a
@@ -440,18 +443,18 @@ means for the future is hardware speeds are moving up we will be able
 follow up the bandwidth! DSP code porting in under the way and this
 takes more hurdles than anticipated -- however with some support by
 SoftdB it's getting finally to a working version what still is a little
-beta (by end of 2011). Also new on the communities demand: A optimized
-Piezo / HV Amplifier "Smart Piezo Drive" what includes a separate DSP
-for several control and monitoring tasks -- it works all standalone and
-fully analog, but can be hooked up via USB to a control computer for
-watching signals and configuring all kind of features like gains and
-bandwidth -- but as a novelty it also can perform linear drift
+beta (by end of 2011). Also new on the communities demand: A GXSMx
+optimized Piezo / HV Amplifier "Smart Piezo Drive" what includes a
+separate DSP for several control and monitoring tasks -- it works all
+standalone and fully analog, but can be hooked up via USB to a control
+computer for watching signals and configuring all kind of features like
+gains and bandwidth -- but as a novelty it also can perform linear drift
 corrections by itself and accepts digitally offset settings.
 
-It's now 2012 and "Arosa Express" is out -- get ready for more remote
-and freely via Python programmable SPM actions! Now VP probing and
-Mover/Autoapproach can by fully controlled via Gxsm-Python-Remote (via
-the "emb" interface). Here is a little sneak peak script:
+It's now 2012 and GXSMx "Arosa Express" is out -- get ready for more
+remote and freely via Python programmable SPM actions! Now VP probing
+and Mover/Autoapproach can by fully controlled via Gxsm-Python-Remote
+(via the "emb" interface). Here is a little sneak peak script:
 
 ```python
     import emb as gxsm
@@ -536,11 +539,14 @@ the past. A kind of netlist will be exposed to Gxsm and configuration
 tools to be manipulated hot. So we have module input "nodes" and moudule
 output "signals" made available for netting up!
 
+GXSMScreenShotmodules-signals-sketchIdea Sketch: Modules and signals.
 Let me break up the existing design in existing modules as sketched:
 
 Outputs will be more configurable and not any more hard assigned -- just
 a default! They will get a input stage with the signal input and two
 additional adding inputs (modulation, etc.) with optional gain.
+GXSMScreenShotmodule-sampleconfiguration-sketchIdea Sketch: Example SPM
+configuration.
 
 To handle all this a new cleaned up python basic based support class and
 a configurator script with monitoring goodies and a signal grph
@@ -571,6 +577,8 @@ long since myt last update here. But finally a e- or re-volution."
 We got a all new fully high definiton capable GTK3 compliant GUI! That
 was some act.
 
+GXSMScreenShotGXSM3-50-1-RTE
+
 Beside many many new features, gxsm is now all into nc-AFM and provided
 dedicated tools for molecular imaging.
 
@@ -599,6 +607,9 @@ control -- all DSP based -- still provides a seamless and 100% backwards
 compatile DSP code from the "outside" point of view.
 
 Oh no\.... I need to rewrite the DSP under the hood section now.
+
+GXSMScreenShotMK3-RTEngine-processes-gxsm-terminal-viewReal Time Engine
+4 GXSM -- a RT process view.
 
 But for the good, things just got better and faster!\
 Gxsm Central, Upton, Long Island, NY, USA,\

@@ -539,7 +539,8 @@ the past. A kind of netlist will be exposed to Gxsm and configuration
 tools to be manipulated hot. So we have module input "nodes" and moudule
 output "signals" made available for netting up!
 
-GXSMScreenShotmodules-signals-sketchIdea Sketch: Modules and signals.
+![Idea Sketch: Modules and signals.](screenshots/modules-signals-sketch.png)
+
 Let me break up the existing design in existing modules as sketched:
 
 Outputs will be more configurable and not any more hard assigned -- just

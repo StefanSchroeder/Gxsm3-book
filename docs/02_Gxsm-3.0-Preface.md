@@ -85,7 +85,7 @@ Signalprozessorkarte gesteuert werden, um später ggf. ohne zusätzlichen
 Aufwandt ein STM nachrüsten zu können.
 
 Das Resultat war ein Programm namens xspa, welches unter Verwendung der
-xforms Libary unter X11 lief.
+xforms-Library unter X11 lief.
 
 Aus diesen Erfahrungen schöpfend entwickelte ich ein völlig neues
 Konzept für eine grundlegend neue Struktur eines neuen STM-Programmes --
@@ -546,8 +546,8 @@ Let me break up the existing design in existing modules as sketched:
 Outputs will be more configurable and not any more hard assigned -- just
 a default! They will get a input stage with the signal input and two
 additional adding inputs (modulation, etc.) with optional gain.
-GXSMScreenShotmodule-sampleconfiguration-sketchIdea Sketch: Example SPM
-configuration.
+
+![Idea Sketch: Example SPM configuration.](screenshots/module-sampleconfiguration-sketch.png)
 
 To handle all this a new cleaned up python basic based support class and
 a configurator script with monitoring goodies and a signal grph

@@ -9,6 +9,14 @@
 
 <https://github.com/pyzahl/Gxsm4>
 
+The latest PDF built from the old TeX-sources:
+
+<https://github.com/StefanSchroeder/Gxsm3-book/releases/download/latest/Gxsm-3.0-Manual.pdf>
+
+The latest PDF built from the onverted Markdown sources:
+
+<https://github.com/StefanSchroeder/Gxsm3-book/releases/download/latest/test.pdf>
+
 !!! note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod

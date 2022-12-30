@@ -9,3 +9,9 @@ nav:
     - Visual:        07_Gxsm-3.0-Visual.md
     - Config:        08_Gxsm-3.0-Config.md
     - License:       99-Gxsm-3.0-gpl.md
+
+markdown_extensions:
+  - admonition
+
+theme:
+    name: readthedocs

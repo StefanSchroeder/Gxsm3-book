@@ -1,7 +1,13 @@
 
-# This is the Index page
+# Gxsm-3.0 Manual
 
 ![Alt Text](images/Gxsm-3.0-icon.png)
+
+https://github.com/StefanSchroeder/Gxsm3-book
+
+https://github.com/pyzahl/Gxsm3
+
+https://github.com/pyzahl/Gxsm4
 
 !!! note
 

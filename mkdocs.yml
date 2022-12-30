@@ -12,6 +12,9 @@ nav:
     - Config:        08_Gxsm-3.0-Config.md
     - License:       99-Gxsm-3.0-gpl.md
 
+repo_url: https://github.com/StefanSchroeder/Gxsm3-book/
+edit_uri: edit/master/docs/
+
 markdown_extensions:
   - admonition
 

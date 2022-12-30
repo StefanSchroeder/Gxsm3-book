@@ -14,6 +14,5 @@ nav:
 
 markdown_extensions:
   - admonition
-  - autorefs
 
 theme: windmill

@@ -16,4 +16,4 @@ markdown_extensions:
   - admonition
 
 theme:
-    name: readthedocs
+    name: material

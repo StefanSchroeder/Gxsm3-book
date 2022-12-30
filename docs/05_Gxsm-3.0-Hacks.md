@@ -17,9 +17,9 @@ Underlying issue
     process -- no matter if the system is running with hardware
     connected or not.
 
-    This is unfortunate in case that you want an independent process for
-    just reviewing data on the same login/X11 display while running
-    GXSM in data aquisition mode at the same time.
+This is unfortunate in case that you want an independent process for
+just reviewing data on the same login/X11 display while running
+GXSM in data aquisition mode at the same time.
 
 Solution
 

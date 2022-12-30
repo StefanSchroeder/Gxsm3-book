@@ -13,5 +13,6 @@ apt -y install texlive-latex-recommended \
 	biber
 	
 apt -y install pandoc mkdocs mkdocs-nature \
-	mkdocs-bootstrap
+	mkdocs-bootstrap mkdocs-autorefs \
+	mkdocs-material mkdocs-material-extensions
 

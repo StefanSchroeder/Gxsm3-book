@@ -2,7 +2,9 @@
 echo "This is the recipe for Ubuntu 22.04 LTS."
 echo "This is the foundation for the online version."
 
+echo "Step 1"
 apt update
+echo "Step 2"
 apt -y install texlive-latex-recommended \
 	texlive-latex-base \
 	texlive-fonts-recommended \
@@ -12,10 +14,9 @@ apt -y install texlive-latex-recommended \
 	latex2html \
 	make \
 	latexmk \
-	biber
-	
-apt -y install pandoc mkdocs mkdocs-nature \
+	biber \
+	pandoc mkdocs mkdocs-nature \
 	mkdocs-bootstrap \
 	mkdocs-material-extensions
-
+echo "Step 3"
 pip install mkdocs-windmill

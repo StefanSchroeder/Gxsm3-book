@@ -16,7 +16,6 @@ apt -y install texlive-latex-recommended \
 	latexmk \
 	biber \
 	pandoc mkdocs mkdocs-nature \
-	mkdocs-bootstrap \
-	mkdocs-material-extensions
+	mkdocs-bootstrap
 echo "Step 3"
 pip install mkdocs-windmill

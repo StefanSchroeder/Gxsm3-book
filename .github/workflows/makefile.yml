@@ -33,3 +33,14 @@ jobs:
 
     - name: Publish docs
       run: mkdocs gh-deploy --force
+
+    - name: Upload PDF artifact
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./test.pdf
+        asset_name: test.pdf
+        asset_content_type: application/pdf
+

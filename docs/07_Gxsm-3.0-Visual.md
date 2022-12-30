@@ -358,7 +358,7 @@ the GL/Mesa renderer. Hardware acceleration is used by the GL subsystem
 if the X-server provides it. This works even while scanning, but
 consumes a lot of CPU power and slows the scanning process down.
 
-GXSMScreenShot3D-view-GL4-surface3D-view example.
+![3D-view example.](screenshots/3D-view-GL4-surface.png) 
 
 #### Pop-up Menu
 
@@ -563,22 +563,27 @@ Render Opt.
         roof with no shingles.. faster and normally better. Just
         disabled in volume/slicing mode obviously..
 
-GXSMScreenShot3D-view-GL4-setup-view-surface3D Scene View Control,
-typical settings for a surface terrain like rendering.
-GXSMScreenShot3D-view-GL4-setup-surface-material-surface3D Scene View
-Material/Color control, typical settings for a surface terrain like
-rendering. GXSMScreenShot3D-view-GL4-setup-render-options-surface3D
-Scene View Options, typical settings for a surface terrain like
-rendering. GXSMScreenShot3D-view-GL4-setup-annotationsScene annotations.
+![3D Scene View Control, typical settings for a surface terrain like
+rendering.](screenshots/3D-view-GL4-setup-view-surface.png)
 
-GXSMScreenShot3D-view-GL4-volumeVolume rendering example.
+![3D Scene View Material/Color control, typical settings for a surface
+terrain like rendering.](screenshots/3D-view-GL4-setup-surface-material-surface.png)
 
-GXSMScreenShot3D-view-GL4-setup-view3D Scene View Control, typical
-settings for a volume rendering.
-GXSMScreenShot3D-view-GL4-setup-render-options3D Scene View Option,
-typical settings for a volume rendering.
-GXSMScreenShot3D-view-GL4-setup-surface-material3D Scene View
-Material/Color control, typical settings for a volume rendering.
+![3D Scene View Options, typical settings for a surface terrain like
+rendering.](screenshots/3D-view-GL4-setup-render-options-surface.png)
+
+![Scene annotations.](screenshots/3D-view-GL4-setup-annotations.png)
+
+![Volume rendering example.](screenshots/3D-view-GL4-volume.png)
+
+![3D Scene View Control, typical settings for a volume
+rendering.](screenshots/3D-view-GL4-setup-view.png)
+
+![3D Scene View Option, typical settings for a volume
+rendering.](screenshots/3D-view-GL4-setup-render-options.png)
+
+![3D Scene View Material/Color control, typical settings for a volume
+rendering.](screenshots/3D-view-GL4-setup-surface-material.png)
 
 ### The general purpose "Profile 1D" view
 

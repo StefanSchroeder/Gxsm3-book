@@ -4,7 +4,7 @@
 documentation**\
 Copyright (C) 1999 - 2022 Percy Zahl, Andreas Klust, et al\
 Email: `mailzahl@users.sourceforge.net`\
-WWW: [gxsm.sourceforge.net](gxsm.sourceforge.net)
+WWW: [[gxsm.sourceforge.net]] 
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the
@@ -152,15 +152,15 @@ The following list gives a short overview on the main features of GXSM:
             reference="pi:primitiveimexport"}
 
         -   Digital Instruments/Veeco Metrology Group, NanoScope
-            (import) (go to [veeco.com](veeco.com) to learn more, see
+            (import) (go to [[veeco.com]] to learn more, see
             [\[pi:nanoimport\]](#pi:nanoimport){reference-type="ref"
             reference="pi:nanoimport"})
 
-        -   Omicron NanoTechnology, Scala ([www.omicron.de](www.omicron.de), see
+        -   Omicron NanoTechnology, Scala ([[www.omicron.de]], see
             [\[pi:OmicronIO\]](#pi:OmicronIO){reference-type="ref"
             reference="pi:OmicronIO"})
 
-        -   WSxM/Nanotec Electronica SPM, WSxM ([www.nanotec.es](www.nanotec.es),
+        -   WSxM/Nanotec Electronica SPM, WSxM ([[www.nanotec.es]],
             see [\[pi:WSxMio\]](#pi:WSxMio){reference-type="ref"
             reference="pi:WSxMio"})
 
@@ -260,7 +260,8 @@ The following list gives a short overview on the main features of GXSM:
     analysis tasks.
 
 -   Cross Platform: works on i386 and PPC based Linux distributions; a
-    Windows port besides the main stream is available[^6].
+    Windows port besides the main stream is available
+    [[gxsm4w.sf.net]].
 
 -   GXSM takes full advantage of the NetCDF data format.
 
@@ -278,7 +279,7 @@ measurements. The DSP software is not necessary for applications using
 GXSM only for data analysis purposes.
 
 [^1]: The Project can be found in the Internet at
-    [gxsm.sourceforge.net](gxsm.sourceforge.net)
+    [[gxsm.sourceforge.net]]
 
 [^2]: Institut für Festkörperphysik, Universität Hannover, Appelstraße
     2, D-30167 Hannover, Germany\
@@ -290,4 +291,5 @@ GXSM only for data analysis purposes.
 
 [^5]: GXSM currently requires Gnome 3.2 and GTK+ 3.22
 
-[^6]: [gxsm4w.sf.net](http://gxsm4w.sf.net)
+
+

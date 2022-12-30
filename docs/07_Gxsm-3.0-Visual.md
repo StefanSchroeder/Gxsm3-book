@@ -1,33 +1,42 @@
 # Visualization {#ch:visual}
 
 As a multi purpose 2D/3D data visualization, acquisition and
-manipulation system  provides a set of powerful graphical presentation
-modes. Available are 2D grey/false color, profile and 3D
-representations. The internal objective structure of  allows to switch
-in between all available "View-Modes" on the fly and at all times, even
-while scanning. In addition, on the fly data to color space mappings are
-provided for viewing data.
+manipulation system GXSM provides a set of powerful graphical
+presentation modes. Available are 2D grey/false color, profile and 3D
+representations. The internal objective structure of GXSM allows to
+switch in between all available "View-Modes" on the fly and at all
+times, even while scanning. In addition, on the fly data to color space
+mappings are provided for viewing data.
 
 ## Data display modes {#Gxsm-VModes}
 
 Due to a possibly huge Z-value range and often small local signal
 variation special data transformations (e.g. for mapping to color space)
-are needed to visualize these features. Therefore from , , , , and view
-modes can be selected via  main window in "View" or via the pop-up
-window of the data window itself. The raw data which are saved for
-example in the nc-files are not affected by a change of the data diplay
-mode.
+are needed to visualize these features. Therefore from *Quick*,
+*Direct*, *PlaneSub*, *Logarith*., *Horizontal*
+*Diff* and *Periodic* view modes can be selected via
+GXSM main window in "View" or via the pop-up window of the data window
+itself. The raw data which are saved for example in the nc-files are not
+affected by a change of the data diplay mode.
+
+*Quick*
 
 :   for each line a line regression is estimated from a subset of points
     (for speed) and data is slope and offset corrected for
     visualization.
+
+*Direct*
 
 :   data is displayed 'as is'. Only a linear transformation for shifting
     and scaling data into view range is performed using the view range
     "VRange Z" and view offset "VOffset Z" controls located context
     menue of the scan window.
 
+*Direct* HiLit
+
 :   Same as Direct but marks the lowest and highest values.
+
+*Plane*
 
 :   data is displayed after background correction by a bi-linear/offset
     function (plane-correction) defined by three Point-Objects. The
@@ -37,11 +46,18 @@ mode.
     scan window or automatically calculated to fit a selected
     rectangular area.
 
+*Horizontal*
+
 :   shifts the lines, so that their average is zero.
 
-:   works like , but the available colors are used periodically
-    repeating (mapping: linear Z transform as in modulo number of
-    colors).
+*Periodic*
+
+:   works like *Direct*, but the available colors are used
+    periodically repeating (mapping: linear Z transform as in
+    *Direct* modulo number of colors). GXSMNoteThe periodic mode
+    is only via. pop up menu accessible.
+
+*Logarithmic*
 
 :   a logarithmic scaling can be applied to data. It used for very high
     dynamic data such as diffraction data (e.g. SPA--LEED or XRD) where
@@ -53,38 +69,49 @@ mode.
     (omits negative values), Contrast and Bright are calculated from
     VRange Z and VOffset Z to fit data into desired Z Range window.
 
+*Differential*
+
 :   displays a averaged and weightened X-derivative, similar to the
     Koehler filter
     [\[PlugIn-F1D-Koehler\]](#PlugIn-F1D-Koehler){reference-type="ref"
     reference="PlugIn-F1D-Koehler"}, but using a smaller averagening
     range (16 pixels).
 
-To change the view mode just select a . These data display modes are
-applyed to all visualization modes, see
+To change the view mode just select a GXSMRadiomain windowQuick / Direct
+/ Plane /Logarith. / Diff.. These data display modes are applyed to all
+visualization modes, see
 [\[Gxsm-Visualisation\]](#Gxsm-Visualisation){reference-type="ref"
 reference="Gxsm-Visualisation"}.
 
 ### Scaling and shifting data view range {#display-dialog}
 
-####  and  {#bright-contrast}
+#### *View* Range Z and *View* Offset Z {#bright-contrast}
 
-The parameters and found in Gxsm main window are controlling the always
-applied linear transformation of the data to grey or false color
-mapping.
+The parameters *VRange* Z and *VOffset* Z found in Gxsm main
+window are controlling the always applied linear transformation of the
+data to grey or false color mapping.
 
-sets the data Z-Range which should be mapped to full color space.
+GXSMEntryVRange Z sets the data Z-Range which should be mapped to full
+color space.
 
-sets the offset relative to averaged data range. E.g. if you data
-represents a stepped surface (terraces assumed to be horizontal aligned)
-and you set the to approx the step height you will get only one terrace
-in view range, others are pinned at max/min color, using the VOffset you
-can select a terrace to be viewed with high contrast.
+GXSMEntryVOffset Z sets the offset relative to averaged data range. E.g.
+if you data represents a stepped surface (terraces assumed to be
+horizontal aligned) and you set the GXSMEntryVRange Z to approx the step
+height you will get only one terrace in view range, others are pinned at
+max/min color, using the VOffset you can select a terrace to be viewed
+with high contrast.
 
-Usually using the button will do the job automatically for the whole
-scan or if a rectangle object
+Usually using the GXSMToolbarAutodisp button will do the job
+automatically for the whole scan or if a rectangle object
 [1.2.2.3](#Gxsm-VObjects){reference-type="ref"
 reference="Gxsm-VObjects"} is selected the selected area will be scaled
-automatically to full color space available. is always set to zero by .
+automatically to full color space available. GXSMEntryVOffset Z is
+always set to zero by GXSMToolbarAutodisp.
+
+GXSMHintIf your scan has some distorsions/spikes messing up the
+automatic min-max range, try enabling the GXSMMenuView/Tolerant Auto
+Display-option. This will compute the view-range via an automatic
+histogram analysis in a progressive way.
 
 #### In SPA--LEED mode: CPS High -- Low {#CPShi-lo}
 
@@ -92,14 +119,16 @@ In SPA--LEED mode the scaling of CPS-High/Low can be set.
 
 ### Using a palette: false color mapping
 
-### Custom and  provided palette {#color-custom}
+### Custom and GXSM provided palette {#color-custom}
 
 The color palette is simply a one dimensional PNM-bitmap file, that can
-be selected through an entry in the preferences dialog, call , and is
-located there . Activate to make use of the selected palette and refresh
-the view via the  .
+be selected through an entry in the preferences dialog, call
+GXSMMenuSettings/Preferences, and is located there
+GXSMPrefUserUser/Palette. Activate GXSMMenuView/Palette to make use of
+the selected palette and refresh the view via the
+GXSM GXSMToolbarAutodisp.
 
- will make use of up to 8192 palette entries automatically.
+GXSM will make use of up to 8192 palette entries automatically.
 
 Here a short description of the PNM file format:
 
@@ -119,21 +148,23 @@ The file is expected to have at least 1024 RGB-entries (R, G, B values
 in the range 0 ...255) just following the header, but no more than 8192
 are accepted. Use *gimp* to generate this conveniently. [^1]
 
- can (re)load a new palette at any time. Choose a new one as described
-above and refresh via the  .
+GXSM can (re)load a new palette at any time. Choose a new one as
+described above and refresh via the GXSM GXSMToolbarAutoDisp.
 
 Additional custom palette files can be loaded from any location, put the
-full path to it into and press OK, then you will find it in the list of
-available palette files in on next call of the preferences.
+full path to it into GXSMPrefPathsPaths/UserPalette and press OK, then
+you will find it in the list of available palette files in
+GXSMMenuView/Palette on next call of the preferences.
 
 ### Additional Information
 
 In particular during data acquisition it is convinient to have a 2D
 representation of the data and a line graph of the last scan line(s).
-You can get this by activating . You can also active the display of
-additional meta-data of the image by . That will show you on the
-different tabs the paramaters/varialbes of the nc-file, Probe Events,
-User Events, and a list of the Objects.[^2].
+You can get this by activating GXSMMenuView/Red profile. You can also
+active the display of additional meta-data of the image by
+GXSMMenuView/Side Pan. That will show you on the different tabs the
+paramaters/varialbes of the nc-file, Probe Events, User Events, and a
+list of the Objects.[^2].
 
 ## Visualization modes
 
@@ -142,7 +173,7 @@ User Events, and a list of the Objects.[^2].
 The visualization mode can be switched at all times, see
 [\[sec:channels:dialog\]](#sec:channels:dialog){reference-type="ref"
 reference="sec:channels:dialog"} for details. The default mode is always
-.
+*Grey 2D*.
 
 ### View "No"
 
@@ -155,26 +186,40 @@ in background in a blind manner.
 The default mode for viewing 2D data. It allows using a simple grey
 scale data representation or using of any available false color palette.
 By default the image size is scaled to achieve a good fit on your
-screen. But any (magnifying by number) or (down-size by 1/number) is
-possible.
+screen. But any *zoom* (magnifying by number) or *quench*
+(down-size by 1/number) is possible.
 
 #### Window title information
 
 In the window title of the channel view shows for example:
 
+GXSMScreenShotScan2DVObjectsGrey 2D view with commonly used objects and
+other gizmos OSD scan info of selected parameters is enabled here (red
+text). The currently active object (colored nodes) is the Rectangle
+object. Also enabled at time of this pdf data view export is the legend
+(scale bar and Z legend, below option).
+
+GXSMTTCh2
+
 :   channel number is 2.
+
+GXSMTTX+ Topo,\*
 
 :   this channel is in data acquiring mode, else here appears the
     path/filename
 
+GXSMTTQ1/5
+
 :   the data view is currently down-sized by factor of 5.
+
+GXSMTTShort\[2\]
 
 :   the current data is of type short (2 bytes).
 
 #### Popup Menu {#Gxsm-TwoD-Popup}
 
-Tthe by clicking activates several convenient options and displaying
-tools:
+Tthe GXSMPopupimage by clicking GXSMMouse3the image activates several
+convenient options and displaying tools:
 
 Activate
 
@@ -221,7 +266,7 @@ Objects
 
 :   set type of object to create, see
     [1.2.2.3](#Gxsm-VObjects){reference-type="ref"
-    reference="Gxsm-VObjects"}. removes all objects.
+    reference="Gxsm-VObjects"}. *Remove* all removes all objects.
 
 Events
 
@@ -239,25 +284,27 @@ available 3rd layered dimension in depth of scan, is shown using the
 profile view ([\[Gxsm-Profile\]](#Gxsm-Profile){reference-type="ref"
 reference="Gxsm-Profile"}).
 
-Select between the different types of objects by the . You add an object
-by left-clicking into the 2D image. You can remove an object by clicking
-with the middle mouse button on it. [^3] You can remove all visible
-objects by .
+Select between the different types of objects by the GXSMPopupObjects.
+You add an object by left-clicking into the 2D image. You can remove an
+object by clicking with the middle mouse button on it. [^3] You can
+remove all visible objects by GXSMPopupObjects/Remove all.
 
 By left-clicking on the object handlers you can modify them. In the case
-that the handlers are two small you can change their size in the menue .
-Look for the settings , and .
+that the handlers are two small you can change their size in the menue
+GXSMMenuSettings/Prefereces. Look for the settings
+GXSMPrefGUIHandleLineWidth, GXSMPrefGUIHandleSize and
+GXSMPrefGUIObjectLineWidth.
 
 For getting the coordinates and Z-value of the mouse position, just hit
 the middle mouse button to get a cross hair pointer and move around to
 measure. You can switch the shown units from default unit to pixels
-using the toggle switch .
+using the toggle switch GXSMPopupGrey 2D viewView/Pixels.
 
 While moving objects, the objects properties coordinates (angle, length,
 ...) are shown in the status line of the window. This is useful for
 measurements, etc.. More precise measurements are possible using the
-object, which is updated on the fly while moving the line interactively
-across the image.
+*Show* Line object, which is updated on the fly while moving the
+line interactively across the image.
 
 Objects are also used to provide some math actions with coordinates.
 
@@ -267,15 +314,16 @@ of view popup) allows saving objects and reloading those later to any
 scan at absolute coordinates (including offset).
 
 While scanning is in progress the current scan-line can be viewed as
-profile, use to toggle it on and off[^4].
+profile, use GXSMPopupGrey 2D viewView/red Profile to toggle it on and
+off[^4].
 
 #### Scan Events
 
 []{#Gxsm-Events label="Gxsm-Events"} Scan Events, available since
 GXSM-2.0 V1.6.0, can be any kind of Event or Experiment related to the
-current tip position and time. Per definition a "Scan Event" holds a
-position and possible more specific information like what happened. I.e
-a simple bias change (User-Event-Entry) or a full set of probe data
+current tip position and time. Per definition a GXSM "Scan Event" holds
+a position and possible more specific information like what happened.
+I.e a simple bias change (User-Event-Entry) or a full set of probe data
 (Prove-Event-Entry).
 
 The number of Events per scan is unlimited. And Events are always
@@ -299,7 +347,7 @@ displayed. Also the setup for data plotting shows up.
 Define you personal hot-keys with the pop-up, just select an pop-up
 entry and press a key!
 
-E.g: Set , for !
+E.g: Set GXSMKey=,GXSMKey- for GXSMPopupGrey 2D viewView/zoom in,out!
 
 ### View "Surface 3D"
 
@@ -310,17 +358,23 @@ the GL/Mesa renderer. Hardware acceleration is used by the GL subsystem
 if the X-server provides it. This works even while scanning, but
 consumes a lot of CPU power and slows the scanning process down.
 
+GXSMScreenShot3D-view-GL4-surface3D-view example.
+
 #### Pop-up Menu
 
-The is activated by clicking . It includes some of the options already
-known from the Grey 2D popup menu, see
-[1.2.2.2](#Gxsm-TwoD-Popup){reference-type="ref"
+The GXSMPopup3D view is activated by clicking GXSMMouse3the image. It
+includes some of the options already known from the Grey 2D popup menu,
+see [1.2.2.2](#Gxsm-TwoD-Popup){reference-type="ref"
 reference="Gxsm-TwoD-Popup"}. The popup offers some options for
 controlling the 3D view:
 
+GXSMTTGL Options
+
 :   Quick access to the display options\
-    (enable/disable showing of the "bottom box"),\
-    (use meshing instead of solid rendering),\
+    *Zero* Plane (enable/disable showing of the "bottom box"),\
+    *Mesh* (use meshing instead of solid rendering),\
+
+GXSMTTScene Setup
 
 :   Open the control panel for 3D Scene Setup, refer to next section.
 
@@ -332,6 +386,8 @@ the middle button for translation. If you find this impractical, use the
 scene setup to set rotation and translation!
 
 #### Scene Setup
+
+GXSMNotefew preliminary notes on 3D view setup
 
 This dialog allows a sophisticated 3D rendering configuration.
 
@@ -384,7 +440,7 @@ View
     :   Height scaling mode. Relative range: 1 equals full data range
         fits 1x1x1 cube. Absolute Range: only meaningful for XYZ data
         with same units. 1 equals Z scale matching X scale to fit 1x1x1
-        cube.
+        cube. GXSMNotefix typo in GUI
 
     Tskl
 
@@ -507,20 +563,46 @@ Render Opt.
         roof with no shingles.. faster and normally better. Just
         disabled in volume/slicing mode obviously..
 
+GXSMScreenShot3D-view-GL4-setup-view-surface3D Scene View Control,
+typical settings for a surface terrain like rendering.
+GXSMScreenShot3D-view-GL4-setup-surface-material-surface3D Scene View
+Material/Color control, typical settings for a surface terrain like
+rendering. GXSMScreenShot3D-view-GL4-setup-render-options-surface3D
+Scene View Options, typical settings for a surface terrain like
+rendering. GXSMScreenShot3D-view-GL4-setup-annotationsScene annotations.
+
+GXSMScreenShot3D-view-GL4-volumeVolume rendering example.
+
+GXSMScreenShot3D-view-GL4-setup-view3D Scene View Control, typical
+settings for a volume rendering.
+GXSMScreenShot3D-view-GL4-setup-render-options3D Scene View Option,
+typical settings for a volume rendering.
+GXSMScreenShot3D-view-GL4-setup-surface-material3D Scene View
+Material/Color control, typical settings for a volume rendering.
+
 ### The general purpose "Profile 1D" view
 
 []{#Gxsm-Profile label="Gxsm-Profile"} For several purposes Gxsm can
-show data using the a general purpose representation (XY-plot).
+show data using the a general purpose *Profile*-View
+representation (XY-plot).
 
-In the view-mode it shows the currently measured line or the first or
-via popup menu () selected line of the data set. The option loads all
-profiles at once, be careful using this with huge scan (lots of memory
-needed). The scaling is (with respect to shown tickmarks) only correct
-for all profiles, if the option or is activated[^5].
+GXSMScreenShotShowLineProfile as used by the Show-Line object (old
+version gxsm2).
+
+GXSMScreenShotanalysis-2d-profile-measuring-1dGxsm3 Profile View of data
+section with cursors A,B eneabled for measuring.
+
+In the view-mode *Profile* 1D it shows the currently measured line
+or the first or via popup menu (*Data Select*/...) selected line
+of the data set. The *All* option loads all profiles at once, be
+careful using this with huge scan (lots of memory needed). The scaling
+is (with respect to shown tickmarks) only correct for all profiles, if
+the option *Y* Scaling/hold or *Y* Scaling/expand only is
+activated[^5].
 
 #### Pop-up Menu
 
-The popup menu of the offer the folowing options:
+The popup menu of the *Profile* View offer the folowing options:
 
 File
 
@@ -549,11 +631,11 @@ Options
 
     Symbols
 
-    :   
+    :   GXSMNA
 
     Legend
 
-    :   
+    :   GXSMNA
 
     Tickmarks
 
@@ -588,9 +670,12 @@ Y Scaling
     :   A set of manual Y offset shift (move upper/lower bound) and Y
         zooming (in/out) options.
 
+    GXSMHintFor quicker adjusting pull of the menu (drag the menu apart
+    by clicking the dashed line) and place it beside!
+
 X Scaling
 
-:   
+:   GXSMNA
 
 Cursor
 
@@ -606,12 +691,14 @@ Cursor
 Data Select
 
 :   Select/walk through a set of multiple data lines or show all.\
+    GXSMNoteOnce selected all, you can't undo this yet, reopen the
+    "Profile View" therefore.
 
 #### 1D data file format
 
-Via the menu the profie data can be saved in Ascii format. The file is
-preceeded by a simple header using commentary lines and a keyword. The
-data itself follows using the following format:
+Via the *File* menu the profie data can be saved in Ascii format.
+The file is preceeded by a simple header using commentary lines and a
+keyword. The data itself follows using the following format:
 
 Height Profile Data:
 
@@ -684,38 +771,40 @@ Simple Shell Script for extracting just X and Y data:
      awk '{ if ($1 != "#") { print $5, $6}}' $file > $file.dat1
     done
 
-Gxsm can reload this type of files using just the command. The file
-should have the extension to be recognized as a profile data set.
+Gxsm can reload this type of files using just the *Open* command.
+The file should have the extension to be recognized as a profile data
+set.
 
 #### Profile Printing
 
-Starting from the menu you will find the -entry. From here you have
-access to six user commands. This commands are simple shell scripts that
-receive a temporarily created version of the 1D profile as argument and
-can do various things with this profile (not only print). There are six
-example scripts in the profileplot subdirectory.
+Starting from the *File* menu you will find the
+*Print*-entry. From here you have access to six user commands.
+This commands are simple shell scripts that receive a temporarily
+created version of the 1D profile as argument and can do various things
+with this profile (not only print). There are six example scripts in the
+profileplot subdirectory.
 
-1.  The first script runs to process your profile and will create a
-    postscript file of your print.
+1.  The first script runs *gri* to process your profile and will
+    create a postscript file of your print.
 
-2.  The second script runs to process your profile and will create a
-    postscript file of your print. The data are modified with an
-    embedded Python script to calculate STS.
+2.  The second script runs *gri* to process your profile and will
+    create a postscript file of your print. The data are modified with
+    an embedded Python script to calculate STS.
 
-3.  The third script runs to process your profile and will create a
-    postscript file of your print. The y-axis is log'ed here.
+3.  The third script runs *gri* to process your profile and will
+    create a postscript file of your print. The y-axis is log'ed here.
 
-4.  The fourth script runs to process your profile and will create a
-    postscript file of your print. This is a copy of the first script.
-    Use this to experiment.
+4.  The fourth script runs *gri* to process your profile and will
+    create a postscript file of your print. This is a copy of the first
+    script. Use this to experiment.
 
-5.  The fifth script runs to show your profile. Remember that Gxsm will
-    freeze while xmgrace is running, so don't use this option as long as
-    a scan is running.
+5.  The fifth script runs *xmgrace* to show your profile. Remember
+    that Gxsm will freeze while xmgrace is running, so don't use this
+    option as long as a scan is running.
 
-6.  The sixth script runs to show your profile. You can export to many
-    bitmap formats from this. Python-matplot is not (yet; check it out)
-    part of debian testing (Feb 05)[^7].
+6.  The sixth script runs *python*-matplot to show your profile.
+    You can export to many bitmap formats from this. Python-matplot is
+    not (yet; check it out) part of debian testing (Feb 05)[^7].
 
 These scripts can run standalone (i. e. without Gxsm running). Simply
 run them with an ASCII-1D-profile as argument like this:
@@ -724,9 +813,9 @@ run them with an ASCII-1D-profile as argument like this:
 
 One can think of many different things these scripts are capable of.
 They can run any calculation on the profiles. These scripts are designed
-to run together with the option, not with the 1-D profile view in the
-channel selector. If you use the latter you will always receive a plot
-of line 0.
+to run together with the *Show* Line option, not with the 1-D
+profile view in the channel selector. If you use the latter you will
+always receive a plot of line 0.
 
 You can run your own scripts by modifying the entries
 User/command\[1..6\] in the preferences.

@@ -150,13 +150,23 @@ Sample/UnitLen
 
 ## DataAq folder
 
-In this section deals with the assignment of data sources to  channels.
-The particular configuration depends on your data acquisition hardware
-and is unique for each instrument. The following explanations are based
-on the Signal Ranger DSP board.
+In this section deals with the assignment of data sources to
+GXSM channels. The particular configuration depends on your data
+acquisition hardware and is unique for each instrument. The following
+explanations are based on the Signal Ranger DSP board.
 
-For the Signal Ranger board the hardware channel assignment to the data
-sources is defined as shown here:
+GXSMNoteFor historic reasons the analog data source channels are grouped
+in blocks of four (A,B) inputs, this was due to the old PCI32 DSP board
+[^2] has four A/D-converters with four input-lines directly connected.
+The even older PC31 has only two A/D-connectors, but four input-lines
+are adressed to each of them via a 4x-multiplexer, which results in
+eight usable analog input lines. Name convention in the x-resources is A
+and B for the converters and 1 to 4 for the four multiplexer input lines
+(PC31). The PCI32 has four converters which are called A1, A2, A3 and
+A4.
+
+For the Signal Ranger board the hardware channel assignment to the GXSM
+data sources is defined as shown here:
 
 ::: {#tab:preferences:dataaq}
   Channel Descriptor    Name      Notes
@@ -176,13 +186,17 @@ sources is defined as shown here:
   DataAq/DataSrcE1      I0        test:FB-Integrator (LockIn-I0 avg) (32bit)
   DataAq/DataSrcF1      Counter   SR-CoolRunner Counter if equipped (experimental) (32bit)
 
-  : Signal Ranger board the hardware channel to  data sources assignment
-  definitions. I0, Counter are experimental and may change any time
+  : Signal Ranger board the hardware channel to GXSM data sources
+  assignment definitions. I0, Counter are experimental and may change
+  any time
 :::
 
 The field "Name" can be used to give the input a real name instead of
 "AIC0" you can used "PLL-dF" or what ever you like. Do not use a ","
 except for ",\*" to set a default, the text behind it will be ignored.
+GXSMHintFor you hackers, check out the SR code, push_area_scan_data()
+in\
+GXSMFileSRanger/TiCC-project-files/FB_spmcontrol/FB_spm_areascan.c.
 
 ## Probe folder
 
@@ -209,11 +223,11 @@ Path/Data
 
 Path/RemoteFifo
 
-:   path to remote fifo (read only by )
+:   path to remote fifo (read only by GXSM)
 
 Path/RemoteFifoOut
 
-:   path to control fifo (wo by )
+:   path to control fifo (wo by GXSM)
 
 Path/Plugins
 
@@ -259,3 +273,6 @@ GUI/layerfields
 
 [^1]: GConf: try the gconf-editor to explore the GXSM settings, path:
     /apps/gxsm2!
+
+[^2]: The old PCI32 DSP card is still supported by GXSM, but some limits
+    apply and it's less and less tested with newer GXSM versions.

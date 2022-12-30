@@ -10,7 +10,7 @@ experiences with STM control. It evolved and diverted quickly into it's
 very own system from then on. Other branches related to work of Ullrich
 Köhler aka PM-STM had some influences and eventually a PM-STM operating
 on OS/2 was a live. With that operating system phasing out a move to
-Linux was undertaken and some software named \"Xxsm\" based on the
+Linux was undertaken and some software named “Xxsm” based on the
 X-Forms GUI was evolving and turned pretty mature by end of 2000 with a
 big move over to the early Gtk toolkit and Gxsm got established. From
 there a long and steady journey was up on it. With more and more
@@ -51,12 +51,12 @@ OS/2-Programm namens PMSTM weiter zu entwickeln. PMSTM basierte auf
 einer schon erheblich älteren OS/2 Version vonL.Anderson und wurde von
 H.Bethge zum Messen eingesetzt.
 
-Gleichzeitig produzierte R.Kumpe einige Assemblerroutinen zur
+Gleichzeitig produzierte R. Kumpe einige Assemblerroutinen zur
 Ansteuerung seiner Datatranslation-Karte unter OS/2 -- welche ebenfalls
 einen spezial STM-Eigenbau, jedoch noch mit analogem Regler, bedienen
 sollte.
 
-Parallel wurden mit H.Pietsch die notwendigen Zusätze für AFM
+Parallel wurden mit H. Pietsch die notwendigen Zusätze für AFM
 implementiert.
 
 Es verging einige Zeit, aber dann war es soweit: Die neue OS/2 Software
@@ -74,8 +74,8 @@ zu Höchtstleistung brachte.
 Die Zeit war gegen das wunderbar stabile OS/2, es wurde zum Außenseiter
 und eigentlich benötigte man es nur noch zum Messen ...
 
-Windows erschien mir als durchaus erfahrenem und gebrantmarktem
-DOS/Win3.X Programmierer als völlig ungeeinete Platform, so hatte ich
+Windows erschien mir als durchaus erfahrenem und gebrandmarktem
+DOS/Win3.X Programmierer als völlig ungeeignete Plattform, so hatte ich
 doch die Vorzüge einer stabilen Betriebssystemplatform mit OS/2 zu
 schätzen gelernt. Ich konnte jedoch mit meinen Unix/Linux
 Grundkenntnissen schnell eine zukunftssichere Alternative finden und
@@ -121,7 +121,7 @@ das DSP- Programm nicht umschreiben zu müssen, war vergebens. Jedoch
 konnte mit einigen Tricks weiterhin eine, zwar neue, aber gemeinsame
 Version erhalten bleiben.
 
-Die alte xforms Libary ist zwar extrem effizient, insbesondere meine
+Die alte xforms-Libary ist zwar extrem effizient, insbesondere meine
 sehr schnellen MIT-SHM Bilddarstellungsroutinen, aber die Oberfläche und
 Menüdarstellung lassen einige Wünsche offen. Eine modernes Toolkit
 Namens Gtk+/Gnome weckte mein Interesse im Sinne des Fortbestandes und
@@ -147,26 +147,21 @@ So gliedert sich das folgende Manual in
 Ich möchte hier meinen Dank an alle aussprechen, die zu meiner Arbeit
 beigetragen haben, insbesondere jedoch:
 
-M. Henzler für das immer gute Instituts-Klima und die schönen "Almen".\
-M. Horn-von-Hoegen dafür, daß er mir die Zeit zum ständigen Arbeiten an
-diesem Projekt gelassen hat.\
-G. Meyer für seine Starthilfe bei der DSP Programmierung und diversen
-Gesprächen.\
-H. Bethge für Ihre Geduld mit mir im Keller.\
-R. Kumpe für seine Mitarbeit an PMSTM und Diskussionen.\
-H. Pietsch für sein Mitwirken an PMSTM.\
-L. Anderson, den ich leider nie persönlich kennengelernt habe, für seine
-Arbeit an PMSTM.\
-U. Köhler und seine Truppe für einige Diskussionen.\
-A. Meier für seine endlose Geduld mit mir ...\
-F.J. Meier zu Heringdorf für immer wieder freundlich und fröhliche BS
-Discussions mit diversen Guinness.\
-R. Hild und M. Bierkandt für deren Ausdauer mit den ewig neuen
-Versionen.\
-A. Klust für alle Beiträge zu diesem Projekt.\
-H. Goldbach für SPA--LEED Discussions und für den (noch nicht)
-herausgesuchten BF krams.\
-Heilo für die Gewährung einer Mehraufwandzulage.\
+- M. Henzler für das immer gute Instituts-Klima und die schönen "Almen".
+- M. Horn-von-Hoegen dafür, daß er mir die Zeit zum ständigen Arbeiten an diesem Projekt gelassen hat.
+- G. Meyer für seine Starthilfe bei der DSP Programmierung und diversen Gesprächen.
+- H. Bethge für Ihre Geduld mit mir im Keller.
+- R. Kumpe für seine Mitarbeit an PMSTM und Diskussionen.
+- H. Pietsch für sein Mitwirken an PMSTM.
+- L. Anderson, den ich leider nie persönlich kennengelernt habe, für seine Arbeit an PMSTM.
+- U. Köhler und seine Truppe für einige Diskussionen.
+- A. Meier für seine endlose Geduld mit mir ...
+- F.J. Meier zu Heringdorf für immer wieder freundlich und fröhliche BS Discussions mit diversen Guinness.
+- R. Hild und M. Bierkandt für deren Ausdauer mit den ewig neuen Versionen.
+- A. Klust für alle Beiträge zu diesem Projekt.
+- H. Goldbach für SPA--LEED Discussions und für den (noch nicht) herausgesuchten BF krams.
+- Heilo für die Gewährung einer Mehraufwandzulage.
+
 Negenborn Januar 2000 Percy Zahl
 
 *... Gxsm has been licensed as GPL and goes to SourceForge.net ...*
@@ -181,7 +176,7 @@ ist.
 
 Das Gxsm-Projekt ist seit Herbst 2000 offiziell als Open-Source auf
 [Source-Forge](http://www.sourceforge.net) via Web-Interface und CVS-Access verfügbar. Die
-Verzeichnishierarchie wurde überarbeitet und "Gxsm" ist nun das
+Verzeichnishierarchie wurde überarbeitet und “Gxsm” ist nun das
 Projekthauptverzeichnis.
 
 Im Dezember 2000 wurde ein flexibles Plug-In Interface für Gxsm
@@ -189,7 +184,8 @@ entworfen und damit begonnen alle speziellen Erweiterungen in Plug-Ins
 auszulagern. Damit wird eine erhebliche Flexibilität erzielt. Im Januar
 2001 sind ein SPA--LEED Simulationsmodul, Peak-Finder, Fokus-Tool und
 Oszi-Plugin hinzugekommen. Ein Support für die alte Burr-Brown Karte für
-SPA--LEED ist ebenfalls verfügbar und bereits im Einsatz.\
+SPA--LEED ist ebenfalls verfügbar und bereits im Einsatz.
+
 Negenborn Januar 2001 Percy Zahl
 
 *... Gxsm goes international ...*
@@ -204,7 +200,8 @@ Kernel 2.4.x support was implemented and is proofed to work well.
 More and more Plug-Ins are added ...
 
 A Gnome Druid to guide the new Gxsm user along all most important
-settings was added.\
+settings was added.
+
 Golden, Colorado USA, August 2001 Percy Zahl
 
 *... about one year later and the Gxsm user community is expanding
@@ -227,7 +224,8 @@ there can't be a new implementation for this non profit project.
 
 And today we can announce the beginning of the new composed Gxsm Manual.
 It is partly automatic generated from Plug-In source files. Lots of
-thanks to Andreas for initiating this development!\
+thanks to Andreas for initiating this development!
+
 Golden, Colorado USA, June 16, 2002 Percy Zahl
 
 *... Gxsm-2.0 is coming and it also starts support for a new DSP
@@ -253,7 +251,8 @@ support for SRanger-USB and some new DSP tools were developed and are
 available via there own SF project (http://SRanger.sf.net). The 3rd DSP
 soft generation for the fixed point SRanger board DSP (TMS320C5402) is
 currently in development, in parallel the Gxsm2 SRanger support is
-created -- No results yet, but it all looks promising.\
+created -- No results yet, but it all looks promising.
+
 Golden, Colorado USA, February 2, 2003 Percy Zahl
 
 *... GXSM-2 and Signal Ranger in daily data production!*
@@ -267,7 +266,8 @@ Also I'm happy to say, the SR does a really good job in our lab as
 second/spare and testing DSP subsystem. The analog performance (noise
 level) is outstanding: Using a huge scanning tube (XY: 1000Å/V, Z:
 200Å/V) it's possible to resolve the Au-herringbone and Buckyballs on
-Au(111)!\
+Au(111)!
+
 Adliswil, Switzerland, October 5th, 2003 Percy Zahl
 
 *... GXSM-2 V1.8.4 and Signal Ranger going Multidimensional and Vector
@@ -285,8 +285,9 @@ form mode for best possible results for any inertial motion driven
 positioning and maximized the flexibility. And for all the future, the
 whole GXSM core undergo an extensive code cleanup which now totally
 removed all remainings of hardware close parameters. These are now
-banned into the corresponding HwI plugins.\
-Rocky Point, Long Island, NY, USA, November 16th, 2005 Percy Zahl\
+banned into the corresponding HwI plugins.
+
+Rocky Point, Long Island, NY, USA, November 16th, 2005 Percy Zahl
 
 *... GXSM-2 V1.12.0 is released with full multidimensional data
 processing and visualization power*
@@ -320,7 +321,8 @@ in any dimension can be generated on the fly.
 
 Export of movies is possible using the Quicktime library. The new OSD
 (On Scan Display) allows to overlay real-time informations, like time
-any other parameters.\
+any other parameters.
+
 Rocky Point, Long Island, NY, USA, September 18th, 2007 Percy Zahl
 
 *... GXSM-2 V1.22.0 releases and all new SPM dedicated SR-A810*
@@ -387,7 +389,8 @@ were implemented, let me just list:
 
 And: A update on Gxsm and teh new MK2-A810 is submitted/accepted to
 Journal of Vacuum Science and Technology B (JVST B), proceedings of the
-NC-AFM, Yale 2009.\
+NC-AFM, Yale 2009.
+
 Brookhaven National Laboratory - CFN, Upton, Long Island, NY, USA,
 October 29th, 2009 Percy Zahl
 
@@ -480,15 +483,15 @@ claim you have free hands to do pretty much all you like in a instant
 real time feedback experience -- but be warned, this also means you can
 dig your tip into the surface if you want to also if you do not take
 care as there is pretty much no way to distinguish unless introduction
-mostly annoying safety "blocks".\
-Brookhaven National Laboratory - CFN, Upton, Long Island, NY, USA,\
+mostly annoying safety “blocks”.
+
+Brookhaven National Laboratory - CFN, Upton, Long Island, NY, USA,
 March 6th, 2012 Percy Zahl
 
-*Signal Revolution: "Snowy Janus Hack" $+$ "Snowy Janus Signal Warrior"
+*Signal Revolution: “Snowy Janus Hack” + “Snowy Janus Signal Warrior”
 with Mark3-Pro-A810-PLL*
 
-[]{#pre-signalrevolution label="pre-signalrevolution"} "And soon I
-realized the power of the new dimension I added!"
+“And soon I realized the power of the new dimension I added!”
 
 An evolving idea leading out of an dilemma unleashing not yet seen power
 and configurability -- a digital patch-rack with a lot of transparency
@@ -567,8 +570,8 @@ Well, read about the actual outcome in the SRanger Mk2/3 HwI plugin
 chapter [\[SR-Mark3\]](#SR-Mark3){reference-type="ref"
 reference="SR-Mark3"}.\
 
-Gxsm Central, Rocky Point, Long Island, NY, USA,\
-March 29th, 2014 Percy Zahl
+Gxsm Central, Rocky Point, Long Island, NY, USA, March 29th, 2014
+Percy Zahl
 
 *Got High Speed? Real Time Engine 4 GXSM-3.50: "Next Level RTime Engine"
 with Mark3-Pro-A810-PLL and RedPitaya*
@@ -613,6 +616,6 @@ Oh, no \.... I need to rewrite the DSP under the hood section now.
 ![Real Time Engine 4 GXSM -- a RT process view.](screenshots/MK3-RTEngine-processes-gxsm-terminal-view.png)
 
 But for the good, things just got better and faster!\
-Gxsm Central, Upton, Long Island, NY, USA,\
-April 19th, 2019 Percy Zahl
+
+Gxsm Central, Upton, Long Island, NY, USA, April 19th, 2019 Percy Zahl
 

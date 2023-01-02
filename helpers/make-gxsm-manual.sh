@@ -25,6 +25,9 @@ else
     elif [ -d ../Gxsm-3.0/plug-ins ] ; then
         echo "Symlinking plug-ins of Gxsm-3.0."
         ln -s ../Gxsm-3.0/plug-ins .
+    elif [ -d ./Gxsm-3.0/plug-ins ] ; then
+        echo "Symlinking plug-ins of Gxsm-3.0."
+        ln -s ./Gxsm-3.0/plug-ins .
     else
         look_for_plugins=$(find ~ -name plug-ins | grep Gxsm | head -1)
         if [ -d $look_for_plugins ] ; then

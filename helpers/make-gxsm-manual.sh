@@ -17,21 +17,28 @@ fi
 if test -L "plug-ins"; then
     echo "Found symlink to plug-ins: OK"
 else
+    echo "Oh, plug-ins folder not there yet..."
+    echo "--------"
+    ls
+    echo "--------"
+    ls ..
+    echo "--------"
+    
     # Take a guess
     if [ -d ../gxsm3-svn/plug-ins ] ; then
-        echo "Symlinking plug-ins of Gxsm-3.0."
+        echo "a) Symlinking plug-ins of Gxsm-3.0."
         ln -s ../gxsm3-svn/plug-ins .
     # Take another guess
     elif [ -d ../Gxsm-3.0/plug-ins ] ; then
-        echo "Symlinking plug-ins of Gxsm-3.0."
+        echo "b) Symlinking plug-ins of Gxsm-3.0."
         ln -s ../Gxsm-3.0/plug-ins .
     elif [ -d ./Gxsm-3.0/plug-ins ] ; then
-        echo "Symlinking plug-ins of Gxsm-3.0."
+        echo "c) Symlinking plug-ins of Gxsm-3.0."
         ln -s ./Gxsm-3.0/plug-ins .
     else
         look_for_plugins=$(find ~ -name plug-ins | grep Gxsm | head -1)
         if [ -d $look_for_plugins ] ; then
-	    echo "Symlinking plug-ins of Gxsm-3.0."
+	    echo "d) Symlinking plug-ins of Gxsm-3.0."
             ln -v -s "$look_for_plugins" .
         else
             # All attempts to find the plug-ins folder failed.

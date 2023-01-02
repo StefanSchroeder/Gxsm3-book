@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Channels - Gxsm-3.0-Manual</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Channels {#ch:channels}", url: "#_top", children: [
+              {title: "The Channel Dialog {#sec:channels:dialog}", url: "#the-channel-dialog-secchannelsdialog" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+      <script src="../extra.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-link">
+        Visual
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-link">
+        Mainwindow
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="channels-chchannels">Channels {#ch:channels}</h1>
+<p>One of the most important features of Gxsm is the
+multichannel-capability. Multichannel-capability describes the
+simultaneous data acquisition and display from different sources. You
+may e.g. at the same time measure topography and friction-forces with
+the AFM. Additionally to the simultaneous acquisition of different
+signals, the multi-channel feature of GXSM can be used to load multiple
+images and, e.g. compare them, or apply more complex operations to them.
+Furthermore, it serves as a history mechanism during image manipulation,
+because the result of any mathematical operation on one channel does not
+overwrite it but is stored in a new channel.</p>
+<p><img alt="Channelselector Windows" src="../screenshots/channelselector.png" /></p>
+<h2 id="the-channel-dialog-secchannelsdialog">The Channel Dialog {#sec:channels:dialog}</h2>
+<p>The channel dialog pops up selecting <em>Ch. Sel.</em> in the
+<em>Windows</em> menu of the main window. You can use it, to select the
+displaymode (<em>View</em>) and the source for data acquisition
+(<em>Mode</em>) for any channel.</p>
+<p>One of the following modes can be chosen, see
+<a href="#Gxsm-Visualisation">[Gxsm-Visualisation]</a>{reference-type="ref"
+reference="Gxsm-Visualisation"} for details:</p>
+<ol>
+<li>
+<p><em>No</em>: During data acquisition no data is displayed --
+    background storage/saving only. You can switch view mode any time.</p>
+</li>
+<li>
+<p><em>Grey 2D</em>: The data are displayed as a grayscaled/false-color
+    image.</p>
+</li>
+<li>
+<p><em>Surface 3D</em>: Three/multi dimensional data/scan viewer.
+    OpenGL (4.0 minimum) based. Can display volume data and slices of
+    multilayered data.</p>
+</li>
+<li>
+<p><em>Profile</em> 1D: Profile view of the current or all lines.</p>
+</li>
+</ol>
+<p>Usually you will use the mode <em>Grey 2D</em> for data acquisition. If
+you want to see the line profiles of the actual scan line, right-click
+on the window of the channel, select <em>view</em> and activate
+<em>red</em> Profile.</p>
+<p>For processing of data several modes are available:</p>
+<ol>
+<li>
+<p><em>Off</em> or <em>On</em>. Off deletes the channel.</p>
+</li>
+<li>
+<p><em>Active</em>. The most important mode, it sets the active
+    channel. All image manipulation is done using this channel. Only one
+    channel can be <em>Active</em> at a time.</p>
+</li>
+<li>
+<p><em>Math Channel</em>, which stores the result of the last operation
+    is automatically called <em>Math</em>.</p>
+</li>
+<li>
+<p><em>X</em> Needed for several math/image-manipulation, that need
+    more than one source.</p>
+</li>
+</ol>
+<p>If you want to activate a channel for data acquisition, please select in
+the second column the channel name, i.e. <em>Topo</em> or
+<em>ADC0_ITunnel</em>. This channel will be used as a target for a scan.
+The toggle <em>$-&gt;$</em> and <em>$&lt;-$</em> in the third column defines
+the scanning direction at which data are collected. Thus <em>Topo+</em> means
+measurement of your topography during movement of your scanhead in +X
+direction. By choosing <em>$2&gt;$</em> or <em>$&lt;2$</em> an <em>experimental</em>
+mode is activated in which each scanline is scanned twice, i.e. this
+mode is used for magnetic force measurements.</p>
+<p>Hint: Using the MK3-A810 DSP with flexible signal configuration 4
+special modes can be configured to acquire any available signal. See
+DSP-Control.</p>
+<p>Hint: The names of the input channels can be customized (see
+<a href="#ch:config">[ch:config]</a>{reference-type="ref"
+reference="ch:config"}).</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-link">
+        Visual
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-link">
+        Mainwindow
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/StefanSchroeder/Gxsm3-book/edit/master/docs/06c_Gxsm-3.0-Channels.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

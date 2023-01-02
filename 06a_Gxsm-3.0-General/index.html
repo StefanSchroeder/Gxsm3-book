@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>General - Gxsm-3.0-Manual</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Program Start {#ch:start}", url: "#_top", children: [
+              {title: "Command line parameters {#sec:start:command-line-pars}", url: "#command-line-parameters-secstartcommand-line-pars" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+      <script src="../extra.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-link">
+        Mainwindow
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../05_Gxsm-3.0-Hacks/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../05_Gxsm-3.0-Hacks/" class="btn btn-xs btn-link">
+        Hacks
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="program-start-chstart">Program Start {#ch:start}</h1>
+<p>This chapter describes the very basics of GXSM usage: the start of the
+program. In a modern Gnome3 (gnome-shell based) desktop environment with
+a proper installed gxsm3 you will find the GXSM in the Aplication menu,
+can seek via gnome-sell command, etc. and place it into your quick start
+application bar.</p>
+<p>However, some of its behavior can be modified using the command line
+parameters described in section
+<a href="#sec:start:command-line-pars">X.X</a>{reference-type="ref"
+reference="sec:start:command-line-pars"}.</p>
+<h2 id="command-line-parameters-secstartcommand-line-pars">Command line parameters {#sec:start:command-line-pars}</h2>
+<p>To start from a command line just type -- no special options at all:\
+<code>gxsm3</code> or for temporary hardware disabling, very handy for data analysis on
+your system configured for hardware usage by default:\
+<code>gxsm3 -h no</code></p>
+<p>Hint: It is recommended to use this as default handler of
+<code>File\*.nc</code> Mime-File types, i.e. used by Nautilus to launch
+GXSM while clicking a data file. To list all understood command line
+options type:</p>
+<p><code>gxsm3 -- --help</code></p>
+<pre><code>    ~$ gxsm3 --help
+    Usage:
+    gxsm3 [OPTION...] List of loadable file(s) .nc, ...
+
+    Help Options:
+    -?, --help                                 Show help options
+    --help-all                                 Show all help options
+    --help-gtk                                 Show GTK+ Options
+
+    Application Options:
+    -V, --version                              Show the application's version
+    -h, --hardware-card                        Hardware Card: no | ... (depends on available HwI plugins)
+    -d, --Hardware-DSPDev                      Hardware DSP Device Path: /dev/sranger0 | ... (depends on module type and index if multiple DSPs)
+    -u, --User-Unit                            XYZ Unit: AA | nm | um | mm | BZ | sec | V | 1 
+    -L, --logging-level                        Set Gxsm logging/monitor level. omit all loggings: 0, minimal logging: 1, default logging: 2, verbose logging: 3, ...
+    -m, --load-files-as-movie                  load file from command in one channel as movie
+    --disable-plugins                          Disable default plugin loading on startup
+    --force-configure                          Force to reconfigure Gxsm on startup
+    --force-rebuild-configuration-defaults     Forces to restore all GXSM values to build in defaults at startup
+    --write-gxsm-preferences-gschema           Generate Gxsm preferences gschema file on startup with build in defaults and exit
+    --write-gxsm-gl-preferences-gschema        Generate Gxsm GL preferences gschema file on startup with build in defaults and exit
+    --write-gxsm-pcs-gschema                   Generate Gxsm pcs gschema file on startup with build in defaults while execution
+    --write-gxsm-pcs-adj-gschema               Generate Gxsm pcs adjustements gschema file on startup with build in defaults while execution
+    -D, --debug-level=DN                       Set Gxsm debug level. 0: no debug output on console, 1: normal, 2: more verbose, ...5 increased verbosity
+    -P, --pi-debug-level=PDN                   Set Gxsm Plug-In debug level. 0: no debug output on console, 1: normal, 2: more verbose, ...5 increased verbosity
+    -s, --new-instance                         Start a new instance of gxsm3 -- not yet functional, use different user account via ssh -X... for now.
+    --display=DISPLAY                          X display to use
+</code></pre>
+<p>::: center
+::: {#tab:command-line}
+  Parameter                    Description</p>
+<hr />
+<p>-h, --Hardware-Card=<em>type</em>   set up type of hardware
+  no                           do not use any hardware, analysis/simulation mode
+  ...                          depends on available HwIs
+  -u, --User-Unit=<em>unit</em>       XYZ unit
+  AA                           Å, $1e-10$ m
+  nm                           nm, $1e-9$ m
+  --disable-plugins            Disables the loading of plugins on startup
+                               mainly for debugging.</p>
+<p>: Command line parameters for calling Gxsm
+:::
+:::</p>
+<p>Right after the options shown above you can list files for opening to
+the free channels.</p>
+<p>All known formats are autodetected.</p>
+<ul>
+<li>
+<p><a href="#pi:WSxMio">[pi:WSxMio]</a>{reference-type="ref" reference="pi:WSxMio"}</p>
+</li>
+<li>
+<p><a href="#pi:nanoimport">[pi:nanoimport]</a>{reference-type="ref" reference="pi:nanoimport"}</p>
+</li>
+<li>
+<p><a href="#pi:OmicronIO">[pi:OmicronIO]</a>{reference-type="ref" reference="pi:OmicronIO"}</p>
+</li>
+<li>
+<p><a href="#pi:primitiveimexport">[pi:primitiveimexport]</a>{reference-type="ref" reference="pi:primitiveimexport"}</p>
+</li>
+<li>
+<p><a href="#pi:sdfimport">[pi:sdfimport]</a>{reference-type="ref" reference="pi:sdfimport"}</p>
+</li>
+<li>
+<p><a href="#pi:UK2kimport">[pi:UK2kimport]</a>{reference-type="ref" reference="pi:UK2kimport"}</p>
+</li>
+<li>
+<p><a href="#pi:gmeyerimexport">[pi:gmeyerimexport]</a>{reference-type="ref" reference="pi:gmeyerimexport"}</p>
+</li>
+<li>
+<p><a href="#pi:spa4imexport">[pi:spa4imexport]</a>{reference-type="ref" reference="pi:spa4imexport"}</p>
+</li>
+<li>
+<p><a href="#pi:GdatImExport">[pi:GdatImExport]</a>{reference-type="ref" reference="pi:GdatImExport"}</p>
+</li>
+<li>
+<p><a href="#pi:PsiHDFimexport">[pi:PsiHDFimexport]</a>{reference-type="ref" reference="pi:PsiHDFimexport"}</p>
+</li>
+<li>
+<p><a href="#pi:pngImExport">[pi:pngImExport]</a>{reference-type="ref" reference="pi:pngImExport"}</p>
+</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../06b_Gxsm-3.0-Mainwindow/" class="btn btn-xs btn-link">
+        Mainwindow
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../05_Gxsm-3.0-Hacks/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../05_Gxsm-3.0-Hacks/" class="btn btn-xs btn-link">
+        Hacks
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/StefanSchroeder/Gxsm3-book/edit/master/docs/06a_Gxsm-3.0-General.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Config - Gxsm-3.0-Manual</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Configuration {#ch:config}", url: "#_top", children: [
+              {title: "Hardware folder {#sec:conf:hardware}", url: "#hardware-folder-secconfhardware" },
+              {title: "Instrument folder {#sec:conf:instr}", url: "#instrument-folder-secconfinstr" },
+              {title: "DataAq folder", url: "#dataaq-folder" },
+              {title: "Probe folder", url: "#probe-folder" },
+              {title: "Folder Adj.", url: "#folder-adj" },
+              {title: "Paths folder", url: "#paths-folder" },
+              {title: "User folder", url: "#user-folder" },
+              {title: "GUI folder", url: "#gui-folder" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+      <script src="../extra.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../99-Gxsm-3.0-gpl/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../99-Gxsm-3.0-gpl/" class="btn btn-xs btn-link">
+        License
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-link">
+        Visual
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="configuration-chconfig">Configuration {#ch:config}</h1>
+<p>All your settings are saved using the gconf database[^1].</p>
+<p>The configuration druid uses the gconf-database and the save-values
+command will rewrite it, just like the and button in the preferences.</p>
+<p>With special care the gconf database can be edited, to set
+defaultvalues. To restore a totally screwed configuration simply remove
+it. The next time you start  the configuration wizard will pop up to
+create your settings from the defaults.</p>
+<p>With Settings/Preferences (dt: Einstellungen/Einstellungen)  can be
+configured during runtime, the changes are (as seen above) saved in .
+This file can be copied to any new user, who wants to share the same
+instrument.</p>
+<p>Any of the settings provides a small help text for your information.</p>
+<h2 id="hardware-folder-secconfhardware">Hardware folder {#sec:conf:hardware}</h2>
+<p>Hardware/Card</p>
+<p>:   Choose hardware: see also section
+    <a href="#sec:HwI-PlugIns">[sec:HwI-PlugIns]</a>{reference-type="ref"
+    reference="sec:HwI-PlugIns"} about Hardware-Interface (HwI) plug-ins
+    for specific details.)</p>
+<pre><code>:   no hardware connected, for data analysis, using internal
+    dummy-mode.
+
+:   Signal Ranger is connected, a running SPM DSP code is expected.
+
+:   A Intelligent Scanning Probe Hardware Module is expected at the
+    device. (pci32.o, pc31.o at /dev/pcdsp (see later) + running on
+    DSP interface board
+
+:   use the RHK internet device
+
+...
+
+:   some more experimental HwI modules may show up.
+</code></pre>
+<p>Hardware/Device</p>
+<p>:   Path to the device used by the specific hardware. Typical are , ,
+    ...</p>
+<h2 id="instrument-folder-secconfinstr">Instrument folder {#sec:conf:instr}</h2>
+<p>Instrument/Type</p>
+<p>:   Select one of STM, AFM, SARLS, SPALEED, CCD. This determines the of
+    the main window.</p>
+<p>Instrument/Name</p>
+<p>:   Any name you want to associate with your instrument. Please limit to
+    30 characters.</p>
+<h3 id="inst-spm-folder">Inst-SPM folder</h3>
+<p>Instrument/X,Y,ZPiezoAV</p>
+<p>:   SPM Piezo sensitivity in A/V.</p>
+<p>Instrument/BiasGain</p>
+<p>:   Gain of the bias-volatge.</p>
+<p>Instrument/nAmpere2Volt</p>
+<p>:   Tunnel amplifier sensitivity:</p>
+<p>Instrument/nNewton2Volt</p>
+<p>:   for AFM Setpoint in nN, 1 for 1nN = 1V</p>
+<p>Instrument/dHertz2Volt</p>
+<p>:   NC AFM Setpoint</p>
+<p>Instrument/ScanOrgCenter</p>
+<p>:   Specific to hardware setup</p>
+<p>Analog/DigRangeIn</p>
+<p>:   positive maximum value for X,Y,Z,...AD-conversion with respect to
+    VoltMaxIn. The converters have to be bipolar (e.g. $\pm 10\;$V)</p>
+<p>Analog/VoltMaxIn</p>
+<p>:   AD Voltage corresponding to DigRangeIn</p>
+<p>Analog/DigRangeOut</p>
+<p>:   positive maximum value for X,Y,Z,...DA-conversion with respect to
+    VoltMaxOut. The converters have to be bipolar (e.g. $\pm 10\;$V)</p>
+<p>Analog/VoltMaxOut</p>
+<p>:   DA Voltage corresponding to DigRangeOut</p>
+<p>Analog/V1-V9</p>
+<p>:   Piezoamplifier Settings, typically: 1,2,5,10,15.</p>
+<p>Analog/VX/Y/Zdefault</p>
+<p>:   Preferences at for programm startup gain selections</p>
+<p>Analog/VX0/Y0/Z0default</p>
+<p>:   Preferences for programm startup gain selections for Offset, only
+    essential if analog offset adding is used.</p>
+<h3 id="inst-spa-folder">Inst-SPA folder</h3>
+<p>Instrument/X,YCalibV</p>
+<p>:   SPALEED: X,Y calibration factor, 1V at DA $\rightarrow$ $\pm 10\;$V
+    resp. $15\;$V at octopol front/back.</p>
+<p>Instrument/EnergyCalibVeV</p>
+<p>:   factor*Volt = energy in eV</p>
+<p>Instrument/Sensitivity</p>
+<p>:   $\textrm{BZ} = \textrm{U} \cdot \textrm{Sensitivity} /
+    \sqrt{\textrm{Energy}[\textrm{eV}]}$</p>
+<p>Instrument/ThetaChGunInt</p>
+<p>:   Half angle between channeltron and electron gun (intern).</p>
+<p>Instrument/ThetaChGunExt</p>
+<p>:   unused.</p>
+<p>Sample/LayerDist</p>
+<p>:   Atom layer distance of the sample in Ångstroem, used for calculation
+    of phase (energy in ).</p>
+<p>Sample/UnitLen</p>
+<p>:   unused.</p>
+<h2 id="dataaq-folder">DataAq folder</h2>
+<p>In this section deals with the assignment of data sources to
+GXSM channels. The particular configuration depends on your data
+acquisition hardware and is unique for each instrument. The following
+explanations are based on the Signal Ranger DSP board.</p>
+<p>GXSMNoteFor historic reasons the analog data source channels are grouped
+in blocks of four (A,B) inputs, this was due to the old PCI32 DSP board
+[^2] has four A/D-converters with four input-lines directly connected.
+The even older PC31 has only two A/D-connectors, but four input-lines
+are adressed to each of them via a 4x-multiplexer, which results in
+eight usable analog input lines. Name convention in the x-resources is A
+and B for the converters and 1 to 4 for the four multiplexer input lines
+(PC31). The PCI32 has four converters which are called A1, A2, A3 and
+A4.</p>
+<p>For the Signal Ranger board the hardware channel assignment to the GXSM
+data sources is defined as shown here:</p>
+<p>::: {#tab:preferences:dataaq}
+  Channel Descriptor    Name      Notes</p>
+<hr />
+<p>DataAq/PIDSrcA1       Topo,*   Z: generated by the Feedback
+  DataAq/PIDSrcA2...4   ---       not used
+  DataAq/DataSrcA1      AIC5      AIC5: I, Force, dFrq, ...what is used as feedback signal
+  DataAq/DataSrcA2      AIC0      AIC0 input (Fric)
+  DataAq/DataSrcA3      AIC1      AIC1 input (Damp., opt. FUZZY source)
+  DataAq/DataSrcA4      AIC2      AIC2 input
+  DataAq/DataSrcB1      AIC3      AIC3 input
+  DataAq/DataSrcB2      AIC4      AIC4 input
+  DataAq/DataSrcB3      AIC5      AIC5 input
+  DataAq/DataSrcB4      AIC6      AIC6 input
+  DataAq/DataSrcC1      dIdV      LockIn 1st of AIC5 (32bit)
+  DataAq/DataSrcD1      ddIdV     LockIn 2nd of AIC5 (32bit)
+  DataAq/DataSrcE1      I0        test:FB-Integrator (LockIn-I0 avg) (32bit)
+  DataAq/DataSrcF1      Counter   SR-CoolRunner Counter if equipped (experimental) (32bit)</p>
+<p>: Signal Ranger board the hardware channel to GXSM data sources
+  assignment definitions. I0, Counter are experimental and may change
+  any time
+:::</p>
+<p>The field "Name" can be used to give the input a real name instead of
+"AIC0" you can used "PLL-dF" or what ever you like. Do not use a ","
+except for ",*" to set a default, the text behind it will be ignored.
+GXSMHintFor you hackers, check out the SR code, push_area_scan_data()
+in\
+GXSMFileSRanger/TiCC-project-files/FB_spmcontrol/FB_spm_areascan.c.</p>
+<h2 id="probe-folder">Probe folder</h2>
+<p>-- obsolete --</p>
+<h2 id="folder-adj">Folder Adj.</h2>
+<p>-- obsolete -- see Entry-Popup menu!</p>
+<p>Configuration of Value-Slider:</p>
+<p>Adjustments.Name/min,max for Area (please care for min $&lt;$ max !!),
+Adjustments.Name/step,page for stepwidth at Cursor, Click.</p>
+<h2 id="paths-folder">Paths folder</h2>
+<p>Path/Logfiles</p>
+<p>:   </p>
+<p>Path/Data</p>
+<p>:   </p>
+<p>Path/RemoteFifo</p>
+<p>:   path to remote fifo (read only by GXSM)</p>
+<p>Path/RemoteFifoOut</p>
+<p>:   path to control fifo (wo by GXSM)</p>
+<p>Path/Plugins</p>
+<p>:   Additional Plugin searchpath</p>
+<h2 id="user-folder">User folder</h2>
+<p>User/SaveWindowGeometry</p>
+<p>:   Always , for future use...</p>
+<p>User/Unit</p>
+<p>:   XYZ-Einheit: Choice of AA, nm, um, mm, BZ, sec, V, 1</p>
+<p>User/HiLoDelta</p>
+<p>:   Checking distance of array for calculation of Min/Max for
+    Autodisplay, 1 = all points visited.</p>
+<p>User/FileType</p>
+<p>:   ( possible, but out of date.)</p>
+<p>User/NameConvention</p>
+<p>:   : Auto enumeration with 001, 002, ..., : Auto enumeration with aaa,
+    aab, ...</p>
+<p>User/SliderControlType</p>
+<p>:   : Omicron Slider Control, : Besocke</p>
+<p>User/Palette</p>
+<p>:   path to palette image (may be altered at runtime) See also ...</p>
+<h2 id="gui-folder">GUI folder</h2>
+<p>GUI/layerfields</p>
+<p>:   Select here, if you want use layered (3d) scans.</p>
+<p>[^1]: GConf: try the gconf-editor to explore the GXSM settings, path:
+    /apps/gxsm2!</p>
+<p>[^2]: The old PCI32 DSP card is still supported by GXSM, but some limits
+    apply and it's less and less tested with newer GXSM versions.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../99-Gxsm-3.0-gpl/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../99-Gxsm-3.0-gpl/" class="btn btn-xs btn-link">
+        License
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../07_Gxsm-3.0-Visual/" class="btn btn-xs btn-link">
+        Visual
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/StefanSchroeder/Gxsm3-book/edit/master/docs/08_Gxsm-3.0-Config.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

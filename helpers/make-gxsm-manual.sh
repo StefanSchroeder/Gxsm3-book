@@ -19,9 +19,7 @@ if test -L "plug-ins"; then
 else
     echo "Oh, plug-ins folder not there yet..."
     echo "--------"
-    ls
-    echo "--------"
-    ls ..
+    ls -al Gxsm-3.0
     echo "--------"
     
     # Take a guess
